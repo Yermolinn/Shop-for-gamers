@@ -1,0 +1,56 @@
+.link {
+  text-decoration: none;
+}
+
+.sale__title {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+
+  color: #ffffff;
+
+  margin-bottom: 35px;
+}
+
+.sale__list-mob {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.sale__list-title {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.18;
+
+  color: #86e543;
+  margin-top: 8px;
+}
+.sale__old-price {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+
+  text-decoration-line: line-through;
+
+  color: #8d9289;
+}
+
+.sale__new-price {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+
+  color: #86e543;
+}
+
+.sale__item-bottom {
+  padding-left: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+}
