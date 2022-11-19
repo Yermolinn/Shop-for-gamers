@@ -1,4 +1,8 @@
 @import './base/common';
+@import './base/reset';
+@import './mixin';
+@import './vars';
+@import './hidden';
 
 @import './layouts/header';
 @import './layouts/hero';
