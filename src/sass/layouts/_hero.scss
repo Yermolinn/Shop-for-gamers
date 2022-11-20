@@ -1,0 +1,72 @@
+.hero {
+  height: 601px;
+  background-color: rgb(59, 82, 59);
+  padding-top: 180px;
+  background-image: url(/src/images/hero/keyboard.png), url(/src/images/hero/mouse.png), url(/src/images/hero/headphones.png), url(/src/images/hero/bg-hero1x.jpg);
+  background-repeat: no-repeat;
+  background-position: right 50px bottom 160px, left 90px top 30px, right 30px top, right;
+  background-size: 120px, 68px, 150px, cover;
+  @include retina {
+    background-image: url(/src/images/hero/bg-hero2x.jpg); 
+}
+  @include mobile {
+    width: 480px;
+}
+}
+
+.hero__container {
+}
+
+.hero__title {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.18;
+  color: var(--prim-text-color);
+}
+
+.hero__btn {
+  padding: 16px 20px 16px 20px;
+  margin: 0 auto;
+  background-color: #86e543;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #01383a;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.under {
+  height: 498px;
+  background-image: url(/src/images/hero/sec-bg-hero-mob1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top: 2px solid #86e543;
+  border-bottom: 2px solid #86e543;
+  @include retina {
+    background-image: url(/src/images/hero/sec-bg-hero-mob2x.jpg); 
+}
+@include mobile {
+    width: 480px;
+}
+}
+.under-thumb {
+}
+.under__title {
+  padding: 405px 40px 37px 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  background-image: linear-gradient(270deg, #1EDDE0 13.26%, #8BDA41 51.01%, #EF001B 107.89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
