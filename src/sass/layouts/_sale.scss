@@ -10,13 +10,17 @@
 
   color: #ffffff;
 
-  margin-bottom: 35px;
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.17;
+  }
 }
 
 .sale__list-mob {
   display: flex;
   flex-direction: column;
   gap: 44px;
+  margin-bottom: 44px;
 
   @include tablet {
     display: none;
@@ -26,6 +30,7 @@
 .sale__list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 44px;
 
   @include tablet {
     gap: 38px;
@@ -76,7 +81,7 @@ picture img {
 
 .sale__price-frame {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .sale__old-price {
@@ -102,4 +107,43 @@ picture img {
 
 .sale {
   background-color: black;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.sale__button {
+  width: 153px;
+  height: 51px;
+
+  background-color: #ffffff;
+  border-radius: 16px;
+
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: #01383a;
+  margin-right: auto;
+  margin-left: auto;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+      0px 4px 10px rgba(134, 229, 67, 0.1);
+  }
+
+  @include tablet {
+    font-size: 28px;
+    line-height: 1.17;
+    width: 195px;
+    height: 65px;
+  }
 }
