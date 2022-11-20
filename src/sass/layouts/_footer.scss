@@ -63,11 +63,13 @@
 }
 
  .footer__soc-list {
-  @include mobile {
+  @media screen and (min-width:320px) and (max-width:767px)
+    
+   {
     margin-right: 15px;
-  }
+  };
  @include tablet {
-  margin-right: 0px;
+ 
   display: flex;
   gap: 16px;
   
