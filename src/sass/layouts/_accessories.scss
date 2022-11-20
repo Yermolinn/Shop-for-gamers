@@ -1,0 +1,117 @@
+.accessories {
+  background-color: #01383a;
+  padding: 40px 0;
+}
+.buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.buttons-item {
+}
+.btn {
+  cursor: pointer;
+  background-color: var(--third-background-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #86e543;
+  letter-spacing: inherit;
+  width: 124px;
+  border: 1px solid #86e543;
+  border-radius: 16px;
+  padding: 6px 22px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background: #86e543;
+    box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+    color: #01383a;
+  }
+}
+.accessories-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+
+  color: #ffffff;
+}
+.lines-list {
+}
+.lines-item {
+}
+.accessories-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 384px;
+}
+.accessories-item {
+}
+.accessiors-link {
+}
+.top-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.accessories-top-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background: linear-gradient(0deg, #01383a, #01383a);
+  border: 1px solid #86e543;
+  box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 16px;
+  transform: translateY(100%);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  .accessiors-link:hover &,
+  .accessiors-link:focus & {
+    transform: translateY(0);
+  }
+}
+.accessories-content {
+  padding: 8px;
+}
+.accessories-name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.18;
+  color: #86e543;
+  margin-bottom: 8px;
+}
+.accessories-past-price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+  color: #8d9289;
+}
+.accessories-new-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #86e543;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.slider-item {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 30px;
+}
