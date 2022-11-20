@@ -1,18 +1,11 @@
 .gallery {
   padding-bottom: 48px;
-  background: #000;
+  background: var(--text-btn-color);
 
   @include tablet {
     height: 786px;
     padding-top: 120px;
     padding-bottom: 120px;
-  }
-  @include desktop {
-    background-image: url(../images/gallery/gallery-font-desc-1x.jpg);
-
-    @include retina {
-      background-image: url(../images/gallery/gallery-font-desc-2x.jpg);
-    }
   }
 }
 
