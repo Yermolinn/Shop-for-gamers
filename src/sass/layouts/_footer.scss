@@ -18,11 +18,14 @@
      margin-right: 61px;
    }
    @include desktop {
-    margin-right: 137px;
+    margin-right: 118px;
    }
   display: block;
   margin-bottom: 25px;
   width: 117px;
+  @include desktop {
+    width: 187px;
+  }
   height: 100%;
   font-weight: 700;
   font-size: 24px;
@@ -35,7 +38,7 @@
    @include tablet {
      margin-right: 89px;
    }
-   @include desktop { margin-right: 204px;}
+   @include desktop { margin-right: 217px;}
   margin-bottom: 16px;
   &:last-child {
     margin-bottom: 0px;
@@ -52,6 +55,7 @@
 .footer-box {
   display: flex;
   justify-content: space-between;
+   margin-left: auto;
 }
 
  .footer__soc-list {
@@ -62,14 +66,15 @@
  }
  @include desktop {
   display: block;
-  margin-right: 258px;
+  margin-right: 281px;
  }
  }
 .footer__soc-item {
-  margin-bottom: 32px;
+  margin-bottom: 32px;npm
+
   &:last-child {
-    margin-bottom: 0px;
-  }
+    margin-bottom: 0px;};
+    @include animation-color;
 }
 .footer__soc-icon {
   fill: var(--icon-color);
@@ -82,7 +87,10 @@
   align-items: center;
   justify-content: center;
   background-color: var(--prim-text-color);
-  
+   &:hover,
+    &:focus {
+   background-color: var(--contact-color);
+    }
 }
 .footer__contacts-titele {
   font-weight: 400;
@@ -94,8 +102,8 @@
 }
 .footer-mail {
   @include tablet {margin-top: 0px;}}
-.footer__contacts-item {
-  
+.footer__contacts {
+  margin-right: auto;
 }
 .footer__contacts-link {
   display: block;
@@ -104,7 +112,6 @@
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   color: var(--contact-color);
 }
 .link {
