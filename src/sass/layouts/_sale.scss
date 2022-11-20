@@ -2,13 +2,25 @@
   text-decoration: none;
 }
 
+.sale {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--section-bgc-color);
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
 .sale__title {
-  font-family: 'Roboto';
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16;
+  margin-left: 80px;
+  margin-bottom: 35px;
 
-  color: #ffffff;
+  color: var(--prim-text-color);
 
   @include tablet {
     font-size: 56px;
@@ -65,17 +77,16 @@ picture img {
 .sale__item-bottom {
   padding-left: 8px;
   padding-bottom: 8px;
-  padding-right: 16px;
+  padding-right: 15px;
   margin-top: 8px;
 }
 
 .sale__list-title {
-  font-family: 'Roboto';
   font-weight: 600;
   font-size: 22px;
   line-height: 1.18;
 
-  color: #86e543;
+  color: var(--sec-text-color);
   margin-bottom: 8px;
 }
 
@@ -85,7 +96,6 @@ picture img {
 }
 
 .sale__old-price {
-  font-family: 'Roboto';
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
@@ -96,35 +106,20 @@ picture img {
 }
 
 .sale__new-price {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
 
-  color: #86e543;
-}
-
-.sale {
-  background-color: black;
-
-  padding-top: 48px;
-  padding-bottom: 48px;
-
-  @include tablet {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+  color: var(--sec-text-color);
 }
 
 .sale__button {
   width: 153px;
   height: 51px;
 
-  background-color: #ffffff;
+  background-color: var(--wht-btn-color);
   border-radius: 16px;
 
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
