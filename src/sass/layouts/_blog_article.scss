@@ -89,6 +89,6 @@
 .blog-article__text {
     color: var(--prim-text-color);
     @include font (400, 16, 1.17, 0.03);
-    white-space: pre-line;
-    width: 100%;
+    /* white-space: pre-line;
+    width: 100%; */
 }
