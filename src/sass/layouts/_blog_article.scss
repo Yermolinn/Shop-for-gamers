@@ -81,7 +81,8 @@
 .blog-article__title-desktop {
     @include desktop {
         padding-bottom: 24px;
-        display: flex;
+        display: inline-flex;
+
     }
 }
 
