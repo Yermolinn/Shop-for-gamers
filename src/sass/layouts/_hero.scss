@@ -3,21 +3,21 @@
   background-color: rgb(59, 82, 59);
   padding-top: 180px;
   padding-bottom: 120px;
-  background-image: url(/src/images/hero/keyboard.png),
-    url(/src/images/hero/mouse.png), url(/src/images/hero/headphones.png),
-    url(/src/images/hero/bg-hero1x.jpg);
+  background-image: url(../src/images/hero/keyboard.png),
+    url(../src/images/hero/mouse.png), url(../src/images/hero/headphones.png),
+    url(../src/images/hero/bg-hero1x.jpg);
   background-repeat: no-repeat;
   background-position: right 50px bottom 130px, left 30px top 60px,
     right top -30px, right;
   background-size: auto, auto, auto, cover;
   @include retina {
-    background-image: url(/src/images/hero/bg-hero2x.jpg);
+    background-image: url(../src/images/hero/bg-hero2x.jpg);
   }
   @include tablet {
     height: 860px;
-    background-image: url(/src/images/hero/keyboard-tab.png),
-    url(/src/images/hero/mouse-tab.png), url(/src/images/hero/headphones-tab.png),
-    url(/src/images/hero/bg-hero1x.jpg);
+    background-image: url(../src/images/hero/keyboard-tab.png),
+    url(../src/images/hero/mouse-tab.png), url(../src/images/hero/headphones-tab.png),
+    url(../src/images/hero/bg-hero1x.jpg);
   background-repeat: no-repeat;
   background-position: right 200px bottom 250px, right 250px top 50px,
   right 50px top 200px, right;
@@ -25,9 +25,9 @@
   }
   @include desktop {
     height: 860px;
-    background-image: url(/src/images/hero/keyboard-desktop.png),
-    url(/src/images/hero/mouse-desktop.png), url(/src/images/hero/headphones-desktop.png),
-    url(/src/images/hero/bg-hero1x.jpg);
+    background-image: url(../src/images/hero/keyboard-desktop.png),
+    url(../src/images/hero/mouse-desktop.png), url(../src/images/hero/headphones-desktop.png),
+    url(../src/images/hero/bg-hero1x.jpg);
   background-repeat: no-repeat;
   background-position: right 450px bottom 250px, right 470px top 50px,
   right 50px top 160px, right;
@@ -100,26 +100,26 @@
 }
 .under__thumb {
   height: 498px;
-  background-image: url(/src/images/hero/sec-bg-hero-mob1x.jpg);
+  background-image: url(../src/images/hero/sec-bg-hero-mob1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-top: 2px solid #86e543;
   border-bottom: 2px solid #86e543;
   @include retina {
-    background-image: url(/src/images/hero/sec-bg-hero-mob2x.jpg);
+    background-image: url(../src/images/hero/sec-bg-hero-mob2x.jpg);
   }
   @include tablet {
-    background-image: url(/src/images/hero/banner-tab1x.jpg);
+    background-image: url(../src/images/hero/banner-tab1x.jpg);
     @include retina {
-      background-image: url(/src/images/hero/banner-tab2x.jpg);
+      background-image: url(../src/images/hero/banner-tab2x.jpg);
     }
   }
   @include desktop {
     max-width: 1600px;
-    background-image: url(/src/images/hero/banner-dekstop1x.jpg);
+    background-image: url(../src/images/hero/banner-dekstop1x.jpg);
     @include retina {
-      background-image: url(/src/images/hero/banner-dekstop2x.jpg);
+      background-image: url(../src/images/hero/banner-dekstop2x.jpg);
     }
   }
 }
