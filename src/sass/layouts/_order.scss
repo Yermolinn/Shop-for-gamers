@@ -35,10 +35,6 @@ button {
     max-width: 306px;
   }
 
-  // @include tablet {
-  //
-  // }
-
   @include desktop {
     flex-direction: row;
     gap: 20px;
@@ -48,9 +44,7 @@ button {
 
 .main-btn,
 .secondary-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(700, 16px, 1.18, null);
   text-transform: uppercase;
 
   border-radius: 16px;
@@ -66,6 +60,7 @@ button {
   color: var(--section-bgc-color);
   padding: 16px 42px;
   background-color: var(--sec-text-color);
+  transition: var(--transition-main);
 
   @include desktop {
     margin: 0;
@@ -104,11 +99,13 @@ button {
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 5;
 
   opacity: 0;
   pointer-events: none;
 
   background-color: #001414cc;
+  transition: opacity var(--transition-main);
 }
 
 .backdrop--is-showen {
@@ -122,22 +119,29 @@ button {
   top: 50%;
   max-width: 272px;
   width: 100%;
-
+  min-height: 300px;
   max-height: 367px;
 
   background-color: var(--section-bgc-color);
 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: transform var(--transition-main);
 
   @include tablet {
     max-width: 688px;
+    min-height: 500px;
     max-height: 566px;
   }
 
   @include desktop {
     max-width: 768px;
+    min-height: 540px;
     max-height: 602px;
   }
+}
+
+.backdrop--is-showen .modal {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .cross {
@@ -209,9 +213,7 @@ button {
 .modal__text {
   margin-bottom: 32px;
 
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
+  @include font(500, 24px, 1.17, null);
   text-align: center;
 
   color: var(--prim-text-color);
@@ -232,6 +234,7 @@ button {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
 
   padding: 16px 25px;
 
