@@ -1,22 +1,42 @@
 .blog {
   background: #01383a;
+  @include tablet {
+  }
+  @include desktop {
+  }
 }
 .container {
 }
+
 .blog__title {
   font-weight: 500;
   font-size: 24px;
   line-height: calc(28 / 24);
   color: #ffffff;
+  padding-top: 40px;
+  @include tablet {
+    font-size: 56px;
+    line-height: calc(66 / 56);
+    padding-left: 85px;
+    padding-top: 120px;
+  }
+  @include desktop {
+    padding-left: 127px;
+  }
 }
 .blog__title-item {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  color: #ffffff;
   margin-bottom: 16px;
-}
-
-.blog__list {
-}
-
-.blog__item {
+  @include tablet {
+    font-size: 56px;
+    line-height: calc(56 / 56);
+  }
+  @include desktop {
+    margin-bottom: 52px;
+  }
 }
 
 .blog__item-article,
@@ -27,7 +47,18 @@
   color: #ffffff;
   //   margin-top: 8px;!!!!img
   margin-bottom: 8px;
+  @include tablet {
+    font-size: 24px;
+    text-align: right;
+  }
 }
+
+.blog__item-article {
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+
 .blog__item-date {
   //   font-weight: 500;
   //   font-size: 16px;
@@ -41,7 +72,13 @@
   line-height: calc(19 / 16);
   color: #ffffff;
   margin-bottom: 8px;
+  @include tablet {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    margin-bottom: 16px;
+  }
 }
+
 .blog__item-link {
   display: block;
   text-align: right;
@@ -50,4 +87,8 @@
   line-height: 100%;
   color: #86e543;
   margin-bottom: 24px;
+  @include tablet {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
 }
