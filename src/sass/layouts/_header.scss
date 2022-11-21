@@ -1,0 +1,63 @@
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+  }
+.header{
+    &_conteiner{
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 16px;
+
+    }
+    background-color: #01383A;
+
+
+    &_logo{
+        display: inline-block;
+    width: 115px;
+    height: 56px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    text-decoration: none;
+
+    
+    }
+
+    &_burger {
+        @include desktop {
+            display: none;  
+        }
+        &-open {
+            width: 54px;
+            height: 36px;
+            fill: #86E543;
+        }
+    }
+
+    &_navigation{
+        display: none;
+
+        @include desktop {
+            display: block;
+        }
+    }
+    &_button {
+    display: none;
+    @include tablet {
+        display: block;
+     }   
+     @include desktop {
+        display: block;
+     }
+    }
+}
