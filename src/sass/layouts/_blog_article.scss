@@ -1,0 +1,86 @@
+.blog-article__section {
+    background: var(--section-bgc-color);
+    padding-top: 40px;
+
+    @include tablet {
+        padding-top: 120px;
+        padding-bottom: 24px;
+    }
+
+    @include desktop {
+        padding-top: 112px;
+        padding-bottom: 24px;
+    }
+
+}
+
+.blog-article__main-title {
+    color: var(--prim-text-color);
+    @include font (500, 24, 1.17, 0.03);
+
+    @include tablet {
+        @include font (500, 56, 1, 0.03);
+    }
+
+    @include desktop {
+        @include font (500, 56, 1, 0.03);
+    }
+}
+
+.blog-article__section--text {
+    background: var(--section-bgc-color);
+    padding-bottom: 48px;
+    padding-top: 20px;
+
+    @include tablet {
+        padding-top: 124px;
+        padding-bottom: 120px;
+    }
+
+    @include desktop {
+        padding-top: 16px;
+        padding-bottom: 120px;
+    }
+}
+
+.blog-article__title {
+    color: var(--prim-text-color);
+    @include font (500, 16, 1, 0.03);
+    padding-bottom: 8px;
+
+    @include tablet {
+        padding-bottom: 32px;
+        color: var(--sec-text-color);
+        @include font (500, 24, 1, 0.03);
+    }
+
+    @include desktop {
+        padding-bottom: 0px;
+        @include font (500, 24, 1, 0.03);
+        color: var(--sec-text-color);
+    }
+}
+
+.blog-article__headline {
+    padding-bottom: 8px;
+    color: var(--contact-color);
+    @include font (500, 16, 1, 0.03);
+
+    @include tablet {
+        padding-bottom: 16px;
+        @include font (500, 24, 1, 0.03);
+    }
+
+    @include desktop {
+        padding-bottom: 0px;
+        @include font (500, 24, 1, 0.03);
+    }
+
+}
+
+.blog-article__title-desktop {
+    @include desktop {
+        padding-bottom: 24px;
+        display: flex;
+    }
+}
