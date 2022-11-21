@@ -19,17 +19,18 @@
             <div class="contacts__feedback">
                 <ul class="contacts__querie">
                     <li>In case of queries about order handling and/or delay, drop us an email at</li>
-                    <li>info@shopforgamers.com</li>
+                    <li><a class="contacts__mail-link" href="mailto:info@shopforgamers.com">info@shopforgamers.com</a>
+                    </li>
                 </ul>
                 <div class="contacts__data">
                     <ul class="contacts__mail">
                         <li>Email</li>
-                        <li>sfg.info@gmail.com</li>
+                        <li><a class="contacts__mail-link" href="mailto:sfg.info@gmail.com">sfg.info@gmail.com</a></li>
                     </ul>
                     <ul class="contacts__phone">
                         <li>Phone number</li>
-                        <li>+38 (093) 643 22 88</li>
-                        <li>+38 (050) 345 44 23</li>
+                        <li><a class="contacts__phone-link" href="tel:+380936432288">+38 (093) 643 22 88</a></li>
+                        <li><a class="contacts__phone-link" href="tel:+380936432288">+38 (050) 345 44 23</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,18 +38,17 @@
                 <form class="contacts__form" autocomplete="off">
                     <p class="contacts__form__title">Contact us</p>
                     <label class="contacts__form__label">
-                        <input class="contacts__form__input" type="text" name="name" placeholder="Name">
+                        <input class="contacts__form__input" type="text" name="name" placeholder="Name" required>
                     </label>
                     <label class="contacts__form__label">
-                        <input class="contacts__form__input" type="email" name="mail" placeholder="Email"
-                            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8}" required>
+                        <input class="contacts__form__input" type="email" name="mail" placeholder="Email" required>
                     </label>
                     <label class="contacts__form__label">
                         <span class="contacts__form__name">Leave your message</span>
                         <textarea class="contacts__form__text-area" rows="5" placeholder=" "></textarea>
                     </label>
-                    <button class="contacts__form__btn" data-modal-open type="button" cursor="pointer">
-                        <p>SEND</p>
+                    <button class="contacts__form__btn" type="button" data-modal-open>
+                        SEND
                     </button>
                 </form>
             </div>

@@ -113,11 +113,212 @@ button {
   }
 }
 
+.gallery {
+  padding-bottom: 48px;
+  background: var(--text-btn-color);
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    height: 786px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.gallery__swiper {
+  width: 100%;
+  height: 550px;
+}
+
+.swiper-slide-wraper {
+  height: 498px;
+  margin-bottom: 24px;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #86e543;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .swiper-slide-wraper {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper-slide-wraper {
+    margin-bottom: 24px;
+  }
+}
+
+.swiper__keyboard {
+  background-image: url(../images/gallery/gallery-key-mob-1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .swiper__keyboard {
+    background-image: url(../images/gallery/gallery-key-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .swiper__keyboard {
+    background-image: url(../images/gallery/gallery-key-tab-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .swiper__keyboard {
+    background-image: url(../images/gallery/gallery-key-tab-2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper__keyboard {
+    background-image: url(../images/gallery/gallery-key-desc-1x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .swiper__keyboard {
+    background-image: url(../images/gallery/gallery-key-desc-2x.jpg);
+  }
+}
+
+.swiper__gamepad {
+  background-image: url(../images/gallery/gallery-joy-desc-1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .swiper__gamepad {
+    background-image: url(../images/gallery/gallery-joy-desc-2x.jpg);
+  }
+}
+
+.swiper__peoples {
+  background-image: url(../images/gallery/gallery-play-desc-1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .swiper__peoples {
+    background-image: url(../images/gallery/gallery-play-desc-2x.jpg);
+  }
+}
+
+.gallery__container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 37px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__container {
+    padding-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery__container {
+    padding-bottom: 49px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__container--keyboard {
+    justify-content: center;
+  }
+}
+
+.gallery__title {
+  width: 257px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    width: 596px;
+  }
+}
+
+.gallery__title--ceyboard {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  background: linear-gradient(270deg, #1edde0 13.26%, #8bda41 51.01%, #ef001b 107.89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title--ceyboard {
+    font-size: 56px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__container--gamepad {
+    padding-bottom: 55px;
+  }
+}
+
+.gallery__title--gamepad {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: 24px;
+  line-height: 1.16;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(270deg, #ffffff 13.26%, #693cf9 60.87%, #f475eb 107.89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title--gamepad {
+    font-size: 56px;
+    line-height: 1.35;
+  }
+}
+
+.gallery__title--peoples {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: 24px;
+  line-height: 1.16;
+  background: linear-gradient(270deg, #03fe8f 4.61%, #ebdcff 57.91%, #ff98f3 92.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gallery__title--peoples span {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title--peoples {
+    font-size: 56px;
+    line-height: 1.35;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: var(--prim-text-color);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px;
+  height: 16px;
+  background: var(--prim-text-color);
+  border-radius: 30px;
+}
+
 input::-webkit-input-placeholder {
   color: var(--prim-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .contacts {
@@ -153,21 +354,33 @@ input::-webkit-input-placeholder {
 }
 
 .contacts__main-picture {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .contacts__main-picture {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+.contacts__main-image {
   display: block;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 16px;
   margin-top: 35px;
+  width: auto;
 }
 @media screen and (min-width: 768px) {
-  .contacts__main-picture {
+  .contacts__main-image {
     border-radius: 12px;
     margin-bottom: 32px;
     margin-top: 67px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .contacts__main-picture {
+  .contacts__main-image {
     border-radius: 12px;
     margin-bottom: 59px;
     margin-top: 75px;
@@ -223,6 +436,15 @@ input::-webkit-input-placeholder {
   text-transform: capitalize;
   color: var(--old-price-color);
   margin-top: 8px;
+}
+
+.contacts__phone-link, .contacts__mail-link {
+  text-decoration: none;
+  color: currentColor;
+  cursor: pointer;
+}
+.contacts__phone-link:focus, .contacts__phone-link:hover, .contacts__mail-link:focus, .contacts__mail-link:hover {
+  color: var(--sec-text-color);
 }
 
 .contacts__feedback {
@@ -392,8 +614,6 @@ input::-webkit-input-placeholder {
 
 .contacts__modal__close-btn {
   position: absolute;
-  width: 31.25px;
-  height: 31.25px;
   top: 24.37px;
   right: 24.37px;
   background-color: inherit;
@@ -402,17 +622,14 @@ input::-webkit-input-placeholder {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__modal__close-btn:hover, .contacts__modal__close-btn:focus {
   transform: rotate(360deg);
-  filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1)) drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
 }
 
 .contacts__modal_text {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 214px;
   font-family: "Roboto";
   font-style: normal;
@@ -426,7 +643,7 @@ input::-webkit-input-placeholder {
   .contacts__modal_text {
     font-size: 56px;
     line-height: 1.18;
-    width: 638px;
+    width: 639px;
   }
 }
 
@@ -459,4 +676,25 @@ input::-webkit-input-placeholder {
     font-size: 32px;
     line-height: 1.19;
   }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 20, 20, 0.8);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  background-color: var(--prim-text-color);
+  transform: scale(0.1);
+  opacity: 0.1;
 }/*# sourceMappingURL=index.css.map */

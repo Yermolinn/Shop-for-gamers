@@ -119,6 +119,14 @@ ul {
         margin-top: 8px;
     }
 }
+.contacts__phone-link, .contacts__mail-link  {
+    text-decoration: none;
+    color:currentColor;
+    cursor: pointer;
+    &:focus, &:hover {
+        color: var(--sec-text-color);
+    }
+} 
 
 .contacts__feedback {
     margin-right: auto;
@@ -290,11 +298,11 @@ ul {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
         transform: rotate(360deg);
-        filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1)) drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+        // filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1)) drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
     }
 }
 
@@ -352,7 +360,7 @@ ul {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 20, 20, 0.8);;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
