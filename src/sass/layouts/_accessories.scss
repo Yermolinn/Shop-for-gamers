@@ -1,20 +1,25 @@
 .accessories {
   background-color: #01383a;
   padding: 40px 0;
+  @include tablet {
+    padding: 120px 0;
+  }
 }
 .buttons-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-  gap: 24px;
   margin-bottom: 50px;
+  justify-content: space-around;
+  row-gap: 24px;
+  @include tablet {
+    margin-bottom: 72px;
+  }
 }
 
 .buttons-item {
 }
 .btn {
-  cursor: pointer;
-  background-color: var(--third-background-color);
+  background-color: transparent;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
@@ -23,7 +28,7 @@
   width: 124px;
   border: 1px solid #86e543;
   border-radius: 16px;
-  padding: 6px 22px;
+  padding: 8px 16px;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,6 +38,14 @@
     box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
     color: #01383a;
   }
+  @include tablet {
+    padding: 16px 24px;
+    width: 132px;
+  }
+  @include desktop {
+    padding: 16px 48px;
+    width: 168px;
+  }
 }
 .accessories-title {
   font-weight: 600;
@@ -40,6 +53,10 @@
   line-height: 1.16;
 
   color: #ffffff;
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.17;
+  }
 }
 .lines-list {
 }
@@ -49,9 +66,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  max-width: 384px;
 }
 .accessories-item {
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .accessiors-link {
 }
@@ -61,9 +85,9 @@
   border-radius: 12px;
 }
 .accessories-top-text {
+  white-space: pre-line;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
   color: #ffffff;
   background: linear-gradient(0deg, #01383a, #01383a);
   border: 1px solid #86e543;
@@ -90,6 +114,11 @@
   color: #86e543;
   margin-bottom: 8px;
 }
+.accessories-price {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
 .accessories-past-price {
   font-weight: 600;
   font-size: 14px;
@@ -104,10 +133,14 @@
   color: #86e543;
 }
 .slider {
+  margin-top: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  @include tablet {
+    margin-top: 32px;
+  }
 }
 .slider-item {
   width: 16px;
