@@ -1,0 +1,96 @@
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+}
+.header{
+    &_conteiner{
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 16px;
+        @include tablet{
+            padding: 40px 40px;
+        }
+    }
+    background-color: #01383A;
+
+
+    &_logo{
+        display: inline-block;
+        width: 115px;
+        height: 56px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #fff;
+        text-decoration: none;
+
+    
+    }
+
+    &_burger {
+        @include desktop {
+            display: none;  
+        }
+        &-open {
+            width: 54px;
+            height: 36px;
+            fill: #86E543;
+        }
+    }
+
+    &_navigation{
+        display: none;
+
+        @include desktop {
+            display: block;
+        }
+    }
+    &_list{
+        
+        display: flex;
+    }
+    &_item{
+        margin-right: 48px;
+        list-style: none;
+        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+        color: #fff;
+    }
+    &_items_link{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+    }
+    &_button {
+    display: none;
+    @include tablet {
+        display: block;
+        background-color: #86E543;
+        border-radius: 16px;
+        width: 95px;
+        height: 40px;
+        left: 633px;
+        top: 56px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 158.7%;
+        
+        }   
+    @include desktop {
+        display: block;
+        }
+    }
+}

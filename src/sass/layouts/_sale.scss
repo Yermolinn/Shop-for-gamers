@@ -1,0 +1,144 @@
+.link {
+  text-decoration: none;
+}
+
+.sale {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--section-bgc-color);
+
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.sale__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  margin-left: 80px;
+  margin-bottom: 35px;
+
+  color: var(--prim-text-color);
+
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.17;
+  }
+}
+
+.sale__list-mob {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-bottom: 44px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.sale__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+
+  @include tablet {
+    gap: 38px;
+  }
+
+  @include desktop {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.sale__item {
+  @include tablet {
+    width: calc((100% - 38px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 4);
+  }
+}
+
+.sale__img {
+  border-radius: 12px;
+}
+
+picture img {
+  border-radius: 12px;
+}
+
+.sale__item-bottom {
+  padding-left: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  margin-top: 8px;
+}
+
+.sale__list-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.18;
+
+  color: var(--sec-text-color);
+  margin-bottom: 8px;
+}
+
+.sale__price-frame {
+  display: flex;
+  align-items: center;
+}
+
+.sale__old-price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  margin-right: 80px;
+
+  text-decoration-line: line-through;
+  color: #8d9289;
+}
+
+.sale__new-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+
+  color: var(--sec-text-color);
+}
+
+.sale__button {
+  width: 153px;
+  height: 51px;
+
+  background-color: var(--wht-btn-color);
+  border-radius: 16px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: #01383a;
+  margin-right: auto;
+  margin-left: auto;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+      0px 4px 10px rgba(134, 229, 67, 0.1);
+  }
+
+  @include tablet {
+    font-size: 28px;
+    line-height: 1.17;
+    width: 195px;
+    height: 65px;
+  }
+}
