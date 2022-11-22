@@ -1,102 +1,100 @@
 .blog {
   background: #01383a;
-  @include tablet {
-    background-image: url(../images/blog/img-fon-tablet-1x.jpg);
-    @include retina {
-      background-image: url(../images/blog/img-fon-tablet-2x.jpg);
-    }
-  }
-  @include desktop {
-    background-image: url(../images/blog/img-fon-desktop-1x.jpg);
-    @include retina {
-      background-image: url(../images/blog/img-fon-desktop-2x.jpg);
-    }
-  }
 }
 .container {
 }
 
 .blog__title {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: calc(28 / 24);
-  color: #ffffff;
+  @include font(500, 24px, 28px, null);
+  color: var(--prim-text-color);
   padding-top: 40px;
   @include tablet {
-    font-size: 56px;
-    line-height: calc(66 / 56);
+    @include font(500, 56px, 66px, null);
     padding-left: 85px;
     padding-top: 120px;
   }
   @include desktop {
     padding-left: 127px;
+    // margin-bottom: 75px;
   }
 }
+
+.blog__img {
+  @include tablet {
+    width: 387px;
+    height: 228px;
+    float: left;
+    margin-right: 44px;
+  }
+  @include desktop {
+    width: 387px;
+    height: 364px;
+    margin-right: 121px;
+  }
+}
+
 .blog__title-item {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: calc(28 / 24);
-  color: #ffffff;
+  @include font(500, 24px, 28px, null);
+  color: var(--prim-text-color);
   margin-bottom: 16px;
   @include tablet {
-    font-size: 56px;
-    line-height: calc(56 / 56);
+    @include font(500, 56px, 56px, null);
   }
   @include desktop {
     margin-bottom: 52px;
   }
 }
 
+.blog__article-container {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .blog__item-article,
 .blog__item-date {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  color: #ffffff;
-  //   margin-top: 8px;!!!!img
-  margin-bottom: 8px;
+  @include font(500, 16px, 100%, null);
+  color: var(--prim-text-color);
   @include tablet {
-    font-size: 24px;
-    text-align: right;
+    @include font(500, 24px, 100%, null);
+    // margin-left: 40px;
+    // text-align: right;
   }
 }
 
 .blog__item-article {
+  margin: 8px 0;
   @include tablet {
-    margin-bottom: 32px;
+    margin: 116px 0 32px 0;
+  }
+  @include desktop {
+    margin: 0px;
   }
 }
 
 .blog__item-date {
-  //   font-weight: 500;
-  //   font-size: 16px;
-  //   line-height: 100%;
-  color: #8d9289;
-  margin-bottom: 16px;
+  color: var(--old-price-color);
+  margin-bottom: 31px;
 }
 .blog__item-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  color: #ffffff;
+  @include font(400, 16px, 19px, null);
+  color: var(--prim-text-color);
   margin-bottom: 8px;
   @include tablet {
-    font-size: 24px;
-    line-height: calc(28 / 24);
+    @include font(400, 24px, 28px, null);
     margin-bottom: 16px;
   }
 }
 
 .blog__item-link {
+  @include font(500, 16px, 100%, null);
   display: block;
   text-align: right;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  color: #86e543;
+  color: var(--sec-text-color);
   // margin-bottom: 24px;
   @include tablet {
-    font-size: 24px;
+    @include font(500, 24px, 100%, null);
     // margin-bottom: 40px;
   }
 }
