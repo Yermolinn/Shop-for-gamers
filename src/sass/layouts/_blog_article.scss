@@ -34,26 +34,17 @@
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
+
+    @include tablet {
+        float: left;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
 
 .blog-article__article {
     padding-top: 20px;
 }
-
-/* .blog-article__section--text {
-    background: var(--section-bgc-color);
-
-
-    @include tablet {
-        padding-top: 124px;
-        padding-bottom: 120px;
-    }
-
-    @include desktop {
-        padding-top: 16px;
-        padding-bottom: 120px;
-    }
-} */
 
 .blog-article__title {
     color: var(--prim-text-color);
@@ -61,13 +52,13 @@
     padding-bottom: 8px;
 
     @include tablet {
+        white-space: pre-line;
         padding-bottom: 32px;
         color: var(--sec-text-color);
         @include font (500, 24, 1, 0.03);
     }
 
     @include desktop {
-        padding-bottom: 0px;
         @include font (500, 24, 1, 0.03);
         color: var(--sec-text-color);
     }
@@ -79,8 +70,8 @@
     @include font (500, 16, 1, 0.03);
 
     @include tablet {
-        padding-bottom: 16px;
         @include font (500, 24, 1, 0.03);
+        white-space: pre-line;
     }
 
     @include desktop {
@@ -91,34 +82,53 @@
 }
 
 .blog-article__title-desktop {
+    @include tablet {
+        margin-top: 75px;
+        padding-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
     @include desktop {
         padding-bottom: 24px;
-        display: inline-flex;
-
     }
 }
 
 .blog-article__text {
+    padding-bottom: 12px;
     color: var(--prim-text-color);
     @include font (400, 16, 1.17, 0.03);
 
     @include tablet {
         @include font(400, 24, 1.17, 0.03)
     }
+
+    padding-bottom: 20px;
+}
+
+.blog-article__text:last-child {
+    padding-bottom: 0;
 }
 
 .blog-article__text--accent {
-    white-space: pre-line;
 
     @include tablet {
         color: var(--sec-text-color);
     }
 }
 
+.blog-article__text-list {
+    color: var(--prim-text-color);
+
+    @include font (400, 16, 1.17, 0.03);
+
+    @include tablet {
+        color: var(--sec-text-color);
+        @include font(400, 24, 1.17, 0.03)
+    }
+}
+
 .blog-article__text-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 
     @include tablet {
         gap: 20px;
