@@ -10,7 +10,8 @@
     right top -30px, right;
   background-size: auto, auto, auto, cover;
   @include retina {
-    background-image: url(../images/hero/bg-hero2x.jpg);
+    background-image: url(../images/hero/keyboard.png), url(../images/hero/mouse.png),
+    url(../images/hero/headphones.png), url(../images/hero/bg-hero2x.jpg);
   }
   @include tablet {
     height: 860px;
