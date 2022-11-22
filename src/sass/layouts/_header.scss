@@ -4,8 +4,6 @@ button {
     font: inherit;
     color: inherit;
     background-color: transparent;
-    /* отображаем курсор в виде руки при наведении; некоторые
-    считают, что необходимо оставлять стрелочный вид для кнопок */
     cursor: pointer;
 }
 .header{
@@ -92,5 +90,11 @@ button {
     @include desktop {
         display: block;
         }
+    }
+    .mob_menu{
+        background-image: url(/src/images/header/Frame_mob.jpg);
+    }
+    .menu_btn{
+        fill: #86E543;
     }
 }
