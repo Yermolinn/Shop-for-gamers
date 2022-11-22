@@ -1,0 +1,73 @@
+<main>
+    <section class="section contacts">
+        <div class="container">
+            <h2 class="contacts__title">Contacts</h2>
+        </div>
+        <picture class="contacts__main-picture">
+            <source srcset="./images/contacts/contacts-main-1200.jpg 1x,
+                                                                 ./images/contacts/contacts-main-1200@2x.jpg 2x"
+                media="(min-width: 1280px)" />
+            <source srcset="./images/contacts/contacts-main-768.jpg 1x,
+                                                                 ./images/contacts/contacts-main-768@2x.jpg 2x"
+                media="(min-width: 480px)" />
+            <source srcset="./images/contacts/contacts-main.jpg 1x,
+                                                             ./images/contacts/contacts-main@2x.jpg 2x" />
+            <img class="contacts__main-image" src="./images/contacts/contacts-main.jpg"
+                alt="illuminated-neon-gaming-keyboard-setup-controller">
+        </picture>
+        <div class="container summary-feedback">
+            <div class="contacts__feedback">
+                <ul class="contacts__querie">
+                    <li>In case of queries about order handling and/or delay, drop us an email at</li>
+                    <li><a class="contacts__mail-link" href="mailto:info@shopforgamers.com">info@shopforgamers.com</a>
+                    </li>
+                </ul>
+                <div class="contacts__data">
+                    <ul class="contacts__mail">
+                        <li>Email</li>
+                        <li><a class="contacts__mail-link" href="mailto:sfg.info@gmail.com">sfg.info@gmail.com</a></li>
+                    </ul>
+                    <ul class="contacts__phone">
+                        <li>Phone number</li>
+                        <li><a class="contacts__phone-link" href="tel:+380936432288">+38 (093) 643 22 88</a></li>
+                        <li><a class="contacts__phone-link" href="tel:+380936432288">+38 (050) 345 44 23</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacts__feedback1">
+                <form class="contacts__form" autocomplete="off">
+                    <p class="contacts__form__title">Contact us</p>
+                    <label class="contacts__form__label">
+                        <input class="contacts__form__input" type="text" name="name" placeholder="Name" required>
+                    </label>
+                    <label class="contacts__form__label">
+                        <input class="contacts__form__input" type="email" name="mail" placeholder="Email" required>
+                    </label>
+                    <label class="contacts__form__label">
+                        <span class="contacts__form__name">Leave your message</span>
+                        <textarea class="contacts__form__text-area" rows="5" placeholder=" "></textarea>
+                    </label>
+                    <button class="contacts__form__btn" type="button" data-modal-open>
+                        SEND
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="contacts__backdrop is-hidden" data-modal>
+            <div class="contacts__modal">
+                <button type="button" data-modal-close class="contacts__modal__close-btn">
+                    <svg width="31.25" height="31.25">
+                        <use href="./images/sprite.svg#icon-charm_circle-cross"></use>
+                    </svg>
+                </button>
+                <p class="contacts__modal_text">
+                    Thank you<br>
+                    for your message!<br>
+                    We will contact you soon!
+                </p>
+                <button class="contacts__modal__btn" type="button" OnClick="location.href='./index.html'">OK</button>
+            </div>
+    </section>
+
+    <script src="./js/contacts-modal.js"></script>
+</main>

@@ -1,0 +1,271 @@
+:root {
+  // TRANSITION
+  --transition-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--section-bgc-color);
+
+  .modal-open & {
+    overflow-y: hidden;
+  }
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition-main);
+}
+
+.wrapper-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 173px;
+
+  @include mobile {
+    max-width: 306px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    gap: 20px;
+    max-width: 100%;
+  }
+}
+
+.main-btn,
+.secondary-btn {
+  @include font(700, 16px, 1.18, null);
+  text-transform: uppercase;
+
+  border-radius: 16px;
+
+  @include desktop {
+    font-size: 32px;
+  }
+}
+
+.main-btn {
+  margin-bottom: 16px;
+
+  color: var(--section-bgc-color);
+  padding: 16px 42px;
+  background-color: var(--sec-text-color);
+  transition: var(--transition-main);
+
+  @include desktop {
+    margin: 0;
+  }
+
+  @include desktop {
+    padding: 16px 64px;
+  }
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  box-shadow: var(--hover-prim-btn);
+}
+
+.secondary-btn {
+  padding: 16px 34.5px;
+  border: 1px solid var(--sec-text-btn-color);
+  background-color: transparent;
+  color: var(--sec-text-btn-color);
+
+  @include desktop {
+    padding: 16px 52px;
+  }
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+  box-shadow: var(--hover-wht-btn);
+}
+
+// -----Backdrop------
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+
+  opacity: 0;
+  pointer-events: none;
+
+  background-color: #001414cc;
+  transition: opacity var(--transition-main);
+}
+
+.backdrop--is-showen {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 272px;
+  width: 100%;
+  min-height: 300px;
+  max-height: 367px;
+
+  background-color: var(--section-bgc-color);
+
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: transform var(--transition-main);
+
+  @include tablet {
+    max-width: 688px;
+    min-height: 500px;
+    max-height: 566px;
+  }
+
+  @include desktop {
+    max-width: 768px;
+    min-height: 540px;
+    max-height: 602px;
+  }
+}
+
+.backdrop--is-showen .modal {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cross {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 4.38px;
+
+  background-color: transparent;
+
+  stroke: var(--sec-text-color);
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.412;
+
+  transition: stroke var(--transition-main);
+}
+
+.cross:hover,
+.cross:focus {
+  stroke: #85ff2e;
+}
+
+// -----Modal-content-----
+
+.modal__content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include tablet {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.modal-for-buy,
+.modal-for-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content--is-hidden {
+  display: none;
+}
+
+.modal-for-buy {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  @include desktop {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.modal__text {
+  margin-bottom: 32px;
+
+  @include font(500, 24px, 1.17, null);
+  text-align: center;
+
+  color: var(--prim-text-color);
+
+  @include tablet {
+    margin-bottom: 56px;
+
+    font-size: 56px;
+    line-height: 1.18;
+  }
+
+  @include desktop {
+    font-size: 64px;
+  }
+}
+
+.modal__main-btn {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+
+  padding: 16px 25px;
+
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  text-decoration: none;
+
+  @include tablet {
+    font-size: 32px;
+    padding-left: 30.5px;
+    padding-right: 30.5px;
+  }
+}
+
+// ---Modal for Add---
+.modal-for-add {
+  padding-left: 42px;
+  padding-right: 42px;
+
+  @include tablet {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.modal__main-btn--add {
+  padding: 16px 51px;
+
+  @include tablet {
+    padding-left: 82.5px;
+    padding-right: 82.5px;
+  }
+}
