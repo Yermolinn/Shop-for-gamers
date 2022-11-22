@@ -54,18 +54,23 @@ button {
         }
     }
     &_list{
-        list-style: none;
+        
         display: flex;
     }
     &_item{
         margin-right: 48px;
         list-style: none;
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
+        
         font-weight: 400;
         font-size: 16px;
         line-height: 1.88;
         color: #fff;
+    }
+    &_items_link{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
     }
     &_button {
     display: none;
