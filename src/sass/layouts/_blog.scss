@@ -1,8 +1,16 @@
 .blog {
   background: #01383a;
   @include tablet {
+    background-image: url(../images/blog/img-fon-tablet-1x.jpg);
+    @include retina {
+      background-image: url(../images/blog/img-fon-tablet-2x.jpg);
+    }
   }
   @include desktop {
+    background-image: url(../images/blog/img-fon-desktop-1x.jpg);
+    @include retina {
+      background-image: url(../images/blog/img-fon-desktop-2x.jpg);
+    }
   }
 }
 .container {
