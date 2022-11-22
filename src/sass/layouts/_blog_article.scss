@@ -1,15 +1,16 @@
 .blog-article__section {
     background: var(--section-bgc-color);
     padding-top: 40px;
+    padding-bottom: 48px;
 
     @include tablet {
         padding-top: 120px;
-        padding-bottom: 24px;
+        padding-bottom: 120px;
     }
 
     @include desktop {
         padding-top: 112px;
-        padding-bottom: 24px;
+        padding-bottom: 120px;
     }
 
 }
@@ -27,10 +28,13 @@
     }
 }
 
+.blog-article__article {
+    padding-top: 20px;
+}
+
 .blog-article__section--text {
     background: var(--section-bgc-color);
-    padding-bottom: 48px;
-    padding-top: 20px;
+
 
     @include tablet {
         padding-top: 124px;
