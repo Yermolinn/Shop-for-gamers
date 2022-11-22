@@ -12,6 +12,10 @@
   @include retina {
     background-image: url(../images/hero/keyboard.png), url(../images/hero/mouse.png),
     url(../images/hero/headphones.png), url(../images/hero/bg-hero2x.jpg);
+    background-repeat: no-repeat;
+    background-position: right 50px bottom 130px, left 30px top 60px,
+      right top -30px, right;
+    background-size: auto, auto, auto, cover;
   }
   @include tablet {
     height: 860px;
