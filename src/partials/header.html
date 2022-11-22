@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/sass/index.scss">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/sass/index.scss" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container header_conteiner">
-            <a class="header_logo" href="/src/index.html">SHOP FOR GAMERS</a>
-            <button class="header_burger">
-                <svg class="header_burger-open" width="54" heigth="36">
-                    <use href="/src/images/sprite.svg#icon-menu-open"></use>
-                </svg>
-            </button>
-            <nav class="header_navigation">
-                <ul class="header_list">
-                    <li class="header_item"><a class="header_items_link" href="/src/accessories.html">Accessories</a></li>
-                    <li class="header_item"><a class="header_items_link" href="/src/contact.html">Contact</a></li>
-                    <li class="header_item"><a class="header_items_link" href="/src/blog.html">Blog</a></li>
-                </ul>
-            </nav>
-            <button type="button" class="header_button">Shop now</button>
+      <div class="container header_conteiner">
+        <a class="header_logo" href="/src/index.html">SHOP FOR GAMERS</a>
+
+        <div class="menu-burger js-open-menu js-close-menu">
+          <span></span>
         </div>
+
+        <!-- <button type="button" class="menu-btn js-open-menu">
+                <svg class="menu-open-icon" width="54" heigth="36">
+                    <use xlink:href="/src/images/sprite.svg#icon-menu-open"></use>
+                </svg>
+            </button> -->
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="/src/accessories.html"
+                >Accessories</a
+              >
+            </li>
+
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="/src/contact.html">Contact</a>
+            </li>
+
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="/src/blog.html">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__shop-btn" href="./order.html">Shop now</a>
+      </div>
     </header>
-</body>
+    <div class="menu js-menu-container">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="accessories.html" class="menu__link">accessories</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link">contact</a>
+        </li>
+        <li class="menu__item">
+          <a href="blog.html" class="menu__link">blog</a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
