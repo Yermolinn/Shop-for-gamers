@@ -53,20 +53,21 @@
                 </form>
             </div>
         </div>
+        <div class="contacts__backdrop is-hidden" data-modal>
+            <div class="contacts__modal">
+                <button type="button" data-modal-close class="contacts__modal__close-btn">
+                    <svg width="31.25" height="31.25">
+                        <use href="./images/sprite.svg#icon-charm_circle-cross"></use>
+                    </svg>
+                </button>
+                <p class="contacts__modal_text">
+                    Thank you<br>
+                    for your message!<br>
+                    We will contact you soon!
+                </p>
+                <button class="contacts__modal__btn" type="button" OnClick="location.href='./index.html'">OK</button>
+            </div>
     </section>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="contacts__modal">
-            <button type="button" data-modal-close class="contacts__modal__close-btn">
-                <svg width="31.25" height="31.25">
-                    <use href="./images/sprite.svg#icon-charm_circle-cross"></use>
-                </svg>
-            </button>
-            <p class="contacts__modal_text">
-                Thank you<br>
-                for your message!<br>
-                We will contact you soon!
-            </p>
-            <button class="contacts__modal__btn" type="button" OnClick="location.href='./index.html'">OK</button>
-        </div>
-        <script src="./js/contacts-modal.js"></script>
+
+    <script src="./js/contacts-modal.js"></script>
 </main>
