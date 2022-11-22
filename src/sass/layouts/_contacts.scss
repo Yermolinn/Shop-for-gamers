@@ -43,6 +43,10 @@ ul {
 .contacts__main-picture {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    @media screen and (min-width:480px) and  (max-width: 767px) {
+        display: block;
+        max-width: 480px;}
     @include tablet {
         margin-left: 40px;
         margin-right: 40px;}
@@ -55,7 +59,10 @@ ul {
     margin-bottom: 16px;
     margin-top: 35px;
     width: auto;
-
+    @media screen and (min-width:480px) and (max-width: 767px) {
+            display: block;
+            max-width: 480px;
+    }
     @include tablet {
         border-radius: 12px;
         margin-bottom: 32px;

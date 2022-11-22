@@ -981,6 +981,13 @@ ul {
 .contacts__main-picture {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .contacts__main-picture {
+    display: block;
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts__main-picture {
@@ -996,6 +1003,12 @@ ul {
   margin-bottom: 16px;
   margin-top: 35px;
   width: auto;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .contacts__main-image {
+    display: block;
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts__main-image {
