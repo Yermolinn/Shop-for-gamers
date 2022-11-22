@@ -1,22 +1,23 @@
 .hero {
   height: 601px;
-  background-color: rgb(59, 82, 59);
+  background-color: #5dec364f;
   padding-top: 180px;
   padding-bottom: 120px;
-  background-image: url(../images/hero/keyboard.png), url(../images/hero/mouse.png),
-    url(../images/hero/headphones.png), url(../images/hero/bg-hero1x.jpg);
+  background-image: url(../images/hero/keyboard.png),
+    url(../images/hero/mouse.png), url(../images/hero/headphones.png),
+    url(../images/hero/bg-hero1x.jpg);
   background-repeat: no-repeat;
   background-position: right 50px bottom 130px, left 30px top 60px,
     right top -30px, right;
   background-size: auto, auto, auto, cover;
   @include retina {
-    background-image: url(../images/hero/keyboard.png), url(../images/hero/mouse.png),
-    url(../images/hero/headphones.png), url(../images/hero/bg-hero2x.jpg);
+    background-image: url(../images/hero/keyboard.png),
+      url(../images/hero/mouse.png), url(../images/hero/headphones.png),
+      url(../images/hero/bg-hero2x.jpg);
     background-repeat: no-repeat;
     background-position: right 50px bottom 130px, left 30px top 60px,
       right top -30px, right;
     background-size: auto, auto, auto, cover;
-  
   }
   // @include mobile {
   //   height: 601px;
