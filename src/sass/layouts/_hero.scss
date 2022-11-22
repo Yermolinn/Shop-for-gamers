@@ -9,13 +9,23 @@
   background-position: right 50px bottom 130px, left 30px top 60px,
     right top -30px, right;
   background-size: auto, auto, auto, cover;
-  @include retina {
+//   @include retina {
+//     background-image: url(../images/hero/bg-hero2x.jpg);
+//   }
+  @include mobile {
+    height: 601px;
+    background-color: rgb(59, 82, 59);
+    padding-top: 180px;
+    padding-bottom: 120px;
     background-image: url(../images/hero/keyboard.png), url(../images/hero/mouse.png),
-    url(../images/hero/headphones.png), url(../images/hero/bg-hero2x.jpg);
+      url(../images/hero/headphones.png), url(../images/hero/bg-hero1x.jpg);
     background-repeat: no-repeat;
     background-position: right 50px bottom 130px, left 30px top 60px,
       right top -30px, right;
     background-size: auto, auto, auto, cover;
+    // @include retina {
+    //     background-image: url(../images/hero/bg-hero2x.jpg);
+    //   }
   }
   @include tablet {
     height: 860px;
@@ -26,6 +36,9 @@
     background-position: right 200px bottom 250px, right 250px top 50px,
       right 50px top 200px, right;
     background-size: auto, auto, auto, cover;
+    // @include retina {
+    //     background-image: url(../images/hero/bg-hero2x.jpg);
+    //   }
   }
   @include desktop {
     height: 860px;
@@ -37,6 +50,9 @@
     background-position: right 450px bottom 250px, right 470px top 50px,
       right 50px top 160px, right;
     background-size: auto, auto, auto, cover;
+    // @include retina {
+    //     background-image: url(../images/hero/bg-hero2x.jpg);
+    //   }
   }
 }
 
@@ -47,7 +63,7 @@
     align-items: flex-start;
   }
   @include desktop {
-    padding-left: 80px;
+    padding-left: 140px;
     width: 100%;
   }
 }
@@ -63,7 +79,7 @@
   color: var(--prim-text-color);
   @include tablet {
     padding-left: 0;
-    padding-right: 340px;
+    padding-right: 310px;
     text-align: left;
     font-size: 56px;
     line-height: 1.18;
