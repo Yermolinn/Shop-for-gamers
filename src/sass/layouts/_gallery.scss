@@ -1,5 +1,174 @@
-// .gallery {
-//   width: 600px;
-//   height: 600px;
-//   background: #666666;
-// }
+.gallery {
+  padding-bottom: 48px;
+  background: var(--text-btn-color);
+
+  @include tablet {
+    height: 786px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.gallery__swiper {
+  width: 100%;
+  height: 550px;
+}
+
+.swiper-slide-wraper {
+  height: 498px;
+  margin-bottom: 24px;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #86e543;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  @include desktop {
+    margin-bottom: 24px;
+  }
+}
+.swiper__keyboard {
+  background-image: url(../images/gallery/gallery-key-mob-1x.jpg);
+
+  @include retina {
+    background-image: url(../images/gallery/gallery-key-mob-2x.jpg);
+  }
+  @include tablet {
+    background-image: url(../images/gallery/gallery-key-tab-1x.jpg);
+
+    @include retina {
+      background-image: url(../images/gallery/gallery-key-tab-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: url(../images/gallery/gallery-key-desc-1x.jpg);
+
+    @include retina {
+      background-image: url(../images/gallery/gallery-key-desc-2x.jpg);
+    }
+  }
+}
+.swiper__gamepad {
+  background-image: url(../images/gallery/gallery-joy-desc-1x.jpg);
+
+  @include retina {
+    background-image: url(../images/gallery/gallery-joy-desc-2x.jpg);
+  }
+}
+.swiper__peoples {
+  background-image: url(../images/gallery/gallery-play-desc-1x.jpg);
+  @include retina {
+    background-image: url(../images/gallery/gallery-play-desc-2x.jpg);
+  }
+}
+.gallery__container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 37px;
+  @include tablet {
+    padding-bottom: 14px;
+  }
+  @include desktop {
+    padding-bottom: 49px;
+  }
+}
+.gallery__container--keyboard {
+  @include desktop {
+    justify-content: center;
+  }
+}
+.gallery__title {
+  width: 257px;
+  @include tablet {
+    width: 596px;
+  }
+}
+.gallery__title--ceyboard {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  background: linear-gradient(
+    270deg,
+    #1edde0 13.26%,
+    #8bda41 51.01%,
+    #ef001b 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.17;
+  }
+}
+.gallery__container--gamepad {
+  @include desktop {
+    padding-bottom: 55px;
+  }
+}
+.gallery__title--gamepad {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: 24px;
+  line-height: 1.16;
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+    270deg,
+    #ffffff 13.26%,
+    #693cf9 60.87%,
+    #f475eb 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.35;
+  }
+}
+
+.gallery__title--peoples {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: 24px;
+  line-height: 1.16;
+  background: linear-gradient(
+    270deg,
+    #03fe8f 4.61%,
+    #ebdcff 57.91%,
+    #ff98f3 92.2%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  span {
+    text-transform: uppercase;
+  }
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.35;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: var(--prim-text-color);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 40px;
+  height: 16px;
+
+  background: var(--prim-text-color);
+  border-radius: 30px;
+}

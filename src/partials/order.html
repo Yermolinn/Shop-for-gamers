@@ -1,0 +1,40 @@
+<div class="wrapper-btn">
+  <button class="main-btn" type="button" data-modal-buy-open>Buy it now</button>
+  <button class="secondary-btn" type="button" data-modal-add-open>
+    Add to card
+  </button>
+</div>
+
+<div class="backdrop" data-modal>
+  <div class="modal">
+    <button type="button" class="cross" data-modal-close>
+      <svg class="cross__icon" width="31.25" height="31.25">
+        <use href="./images/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <div class="modal__content">
+      <div class="modal-for-buy content--is-hidden" data-content-buy>
+        <p class="modal__text">
+          Thank you <br />
+          for your order!<br />
+          We will contact you soon!
+        </p>
+        <a href="./accessories.html" class="main-btn modal__main-btn"
+          >KEEP SHOPPING</a
+        >
+      </div>
+
+      <div class="modal-for-add content--is-hidden" data-content-add>
+        <p class="modal__text">
+          Excellent choice! <br />Let's move on to the checkout!
+        </p>
+        <a
+          href="./index.html"
+          class="main-btn modal__main-btn modal__main-btn--add"
+        >
+          Let's go!
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
