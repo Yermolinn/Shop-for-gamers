@@ -53,6 +53,20 @@ button {
             display: block;
         }
     }
+    &_list{
+        list-style: none;
+        display: flex;
+    }
+    &_item{
+        margin-right: 48px;
+        list-style: none;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+        color: #fff;
+    }
     &_button {
     display: none;
     @include tablet {
