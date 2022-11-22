@@ -9,7 +9,7 @@
                 media="(min-width: 1280px)" />
             <source srcset="./images/contacts/contacts-main-768.jpg 1x,
                                                                  ./images/contacts/contacts-main-768@2x.jpg 2x"
-                media="(min-width: 768px)" />
+                media="(min-width: 480px)" />
             <source srcset="./images/contacts/contacts-main.jpg 1x,
                                                              ./images/contacts/contacts-main@2x.jpg 2x" />
             <img class="contacts__main-image" src="./images/contacts/contacts-main.jpg"
@@ -53,20 +53,21 @@
                 </form>
             </div>
         </div>
+        <div class="contacts__backdrop is-hidden" data-modal>
+            <div class="contacts__modal">
+                <button type="button" data-modal-close class="contacts__modal__close-btn">
+                    <svg width="31.25" height="31.25">
+                        <use href="./images/sprite.svg#icon-charm_circle-cross"></use>
+                    </svg>
+                </button>
+                <p class="contacts__modal_text">
+                    Thank you<br>
+                    for your message!<br>
+                    We will contact you soon!
+                </p>
+                <button class="contacts__modal__btn" type="button" OnClick="location.href='./index.html'">OK</button>
+            </div>
     </section>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="contacts__modal">
-            <button type="button" data-modal-close class="contacts__modal__close-btn">
-                <svg width="31.25" height="31.25">
-                    <use href="./images/sprite.svg#icon-charm_circle-cross"></use>
-                </svg>
-            </button>
-            <p class="contacts__modal_text">
-                Thank you<br>
-                for your message!<br>
-                We will contact you soon!
-            </p>
-            <button class="contacts__modal__btn" type="button" OnClick="location.href='./index.html'">OK</button>
-        </div>
-        <script src="./js/contacts-modal.js"></script>
+
+    <script src="./js/contacts-modal.js"></script>
 </main>
