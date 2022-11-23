@@ -10,9 +10,7 @@
   background-position: right 50px bottom 130px, left 30px top 60px,
     right top -30px, right;
   background-size: auto, auto, auto, cover;
-  @include retina {
-    background-image: url(../images/hero/bg-hero2x.jpg);
-  }
+  
   @include tablet {
     height: 860px;
     background-image: url(../images/hero/keyboard-tab.png),
@@ -35,18 +33,7 @@
   }
 }
 
-.hero__container {
-    @include tablet {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      @include desktop {
-        padding-left: 80px;
-        width: 100%;
-      }
- 
-}
+
 
 .hero__title {
   text-align: center;
@@ -58,6 +45,8 @@
   line-height: 1.18;
   color: var(--prim-text-color);
   @include tablet {
+    text-align: left;
+    margin-bottom: 94px;
     padding-left: 0;
     padding-right: 340px;
     text-align: left;
@@ -65,6 +54,7 @@
     line-height: 1.18;
   }
   @include desktop {
+    margin-bottom: 40px;
     padding-left: 0;
     padding-right: 623px;
     font-size: 64px;
@@ -83,72 +73,15 @@
   line-height: 1.18;
   color: #01383a;
   text-transform: uppercase;
+  @include animation-shadow;
   @include tablet {
     margin: 0;
     font-size: 32px;
     line-height: 1.18;
   }
+  &:hover,
+  &:focus {
+    box-shadow: var(--hover-prim-btn);
+  }
 }
 
-// .under {
-//   background-color: var(--section-bgc-color);
-//   padding-left: 0;
-//   padding-right: 0;
-//   @include desktop {
-//     max-width: 1600px;
-//   }
-// }
-// .under__thumb {
-//   height: 498px;
-//   background-image: url(../src/images/hero/sec-bg-hero-mob1x.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   border-top: 2px solid #86e543;
-//   border-bottom: 2px solid #86e543;
-//   @include retina {
-//     background-image: url(../src/images/hero/sec-bg-hero-mob2x.jpg);
-//   }
-//   @include tablet {
-//     background-image: url(../src/images/hero/banner-tab1x.jpg);
-//     @include retina {
-//       background-image: url(../src/images/hero/banner-tab2x.jpg);
-//     }
-//   }
-//   @include desktop {
-//     max-width: 1600px;
-//     background-image: url(../src/images/hero/banner-dekstop1x.jpg);
-//     @include retina {
-//       background-image: url(../src/images/hero/banner-dekstop2x.jpg);
-//     }
-//   }
-// }
-// .under__title {
-//   padding: 405px 40px 37px 24px;
-//   font-weight: 600;
-//   font-size: 24px;
-//   line-height: 1.16;
-//   background-image: linear-gradient(
-//     270deg,
-//     #1edde0 13.26%,
-//     #8bda41 51.01%,
-//     #ef001b 107.89%
-//   );
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background-clip: text;
-//   text-fill-color: transparent;
-//   @include tablet {
-//     padding: 352px 131px 14px 41px;
-//     font-size: 56px;
-//     line-height: 1.18;
-//   }
-//   @include desktop {
-//     font-size: 56px;
-//     line-height: 1.18;
-//     padding-left: 280px;
-//     padding-right: 339px;
-//     padding-bottom: 40px;
-//     padding-top: 320px;
-//   }
-// }
