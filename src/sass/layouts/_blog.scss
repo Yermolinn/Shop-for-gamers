@@ -15,23 +15,24 @@
   }
   @include desktop {
     padding-left: 127px;
-    // margin-bottom: 75px;
+    margin-bottom: 75px;
   }
 }
 
-.blog__2 {
-  @include tablet {
+.blog__wrap {
+  @include desktop {
+    display: flex;
+    margin-bottom: 40px;
+  }
+}
+
+.blog__content {
+  @include desktop {
     display: flex;
   }
 }
 
-.blog__3 {
-  @include desktop {
-    // display: flex;
-  }
-}
-
-.blog__4 {
+.blog__text {
   @include desktop {
     display: block;
   }
@@ -39,8 +40,10 @@
 
 .blog__img {
   @include tablet {
-    min-width: 387px;
+    width: 387px;
     height: 228px;
+    float: left;
+    margin-right: 40px;
   }
   @include desktop {
     min-width: 387px;
@@ -60,19 +63,40 @@
   }
   @include desktop {
     margin-bottom: 52px;
+    display: none;
+  }
+}
+
+.blog__title-item-desktop {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    @include font(500, 56px, 56px, null);
+    color: var(--prim-text-color);
+    margin-left: 120px;
+    display: block;
   }
 }
 
 .blog__article-container {
   @include tablet {
     margin-left: 40px;
-    margin-top: auto;
+    // margin-top: 160px;
   }
   @include desktop {
     display: flex;
     justify-content: space-between;
-    margin-left: 120px;
-    margin-top: 0;
+    margin: 52px 0 23px 120px;
+  }
+}
+
+.blog__article-monitoring-container {
+  @include desktop {
+    margin: 24px 0 23px 120px;
   }
 }
 
@@ -81,7 +105,7 @@
   @include font(500, 16px, 100%, null);
   color: var(--prim-text-color);
   @include tablet {
-    @include font(500, 25px, 100%, null);
+    @include font(500, 24px, 100%, null);
   }
 }
 
@@ -89,9 +113,11 @@
   margin: 8px 0;
   @include tablet {
     margin: 0 0 32px 0;
+    padding-top: 122px;
   }
   @include desktop {
     margin: 0px;
+    padding-top: 0;
   }
 }
 
@@ -135,6 +161,9 @@
   margin: 0;
   @include tablet {
     padding: 43px 0 120px 0;
+  }
+  @include desktop {
+    padding: 0 0 120px 0;
   }
 }
 .point {
