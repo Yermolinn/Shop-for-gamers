@@ -19,24 +19,42 @@
   }
 }
 
+.blog__2 {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.blog__3 {
+  @include desktop {
+    // display: flex;
+  }
+}
+
+.blog__4 {
+  @include desktop {
+    display: block;
+  }
+}
+
 .blog__img {
   @include tablet {
-    width: 387px;
+    min-width: 387px;
     height: 228px;
-    float: left;
-    margin-right: 44px;
   }
   @include desktop {
-    width: 387px;
+    min-width: 387px;
     height: 364px;
-    margin-right: 121px;
   }
 }
 
 .blog__title-item {
   @include font(500, 24px, 28px, null);
   color: var(--prim-text-color);
-  margin-bottom: 16px;
+  margin: 24px 0 16px 0;
+  @include tablet {
+    margin-top: 40px;
+  }
   @include tablet {
     @include font(500, 56px, 56px, null);
   }
@@ -46,9 +64,15 @@
 }
 
 .blog__article-container {
+  @include tablet {
+    margin-left: 40px;
+    margin-top: auto;
+  }
   @include desktop {
     display: flex;
     justify-content: space-between;
+    margin-left: 120px;
+    margin-top: 0;
   }
 }
 
@@ -57,16 +81,14 @@
   @include font(500, 16px, 100%, null);
   color: var(--prim-text-color);
   @include tablet {
-    @include font(500, 24px, 100%, null);
-    // margin-left: 40px;
-    // text-align: right;
+    @include font(500, 25px, 100%, null);
   }
 }
 
 .blog__item-article {
   margin: 8px 0;
   @include tablet {
-    margin: 116px 0 32px 0;
+    margin: 0 0 32px 0;
   }
   @include desktop {
     margin: 0px;
@@ -75,7 +97,10 @@
 
 .blog__item-date {
   color: var(--old-price-color);
-  margin-bottom: 31px;
+  margin-bottom: 8px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 .blog__item-text {
   @include font(400, 16px, 19px, null);
@@ -83,7 +108,10 @@
   margin-bottom: 8px;
   @include tablet {
     @include font(400, 24px, 28px, null);
-    margin-bottom: 16px;
+    margin: 16px 0;
+  }
+  @include desktop {
+    margin-left: 120px;
   }
 }
 
@@ -99,20 +127,14 @@
   }
 }
 
-.blog__item:not(:last-child) {
-  margin-bottom: 24px;
-  @include tablet {
-    margin-bottom: 40px;
-  }
-}
-
 .wrapper {
   display: flex;
   gap: 16px;
   justify-content: center;
-  padding: 42px 0;
+  padding: 48px 0;
+  margin: 0;
   @include tablet {
-    padding: 42px 0 120px 0;
+    padding: 43px 0 120px 0;
   }
 }
 .point {
