@@ -5,6 +5,7 @@ button {
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+    
 }
 .header{
     &_conteiner{
@@ -29,7 +30,7 @@ button {
         line-height: 28px;
         color: #fff;
         text-decoration: none;
-
+        text-align: center;
     
     }
 
@@ -41,6 +42,7 @@ button {
             width: 54px;
             height: 36px;
             fill: #86E543;
+            background-color: #01383A;
         }
     }
 
@@ -90,13 +92,44 @@ button {
     @include desktop {
         display: block;
         }
+        
     }
     .mob_menu{
-        background-image: url(/src/images/header/Frame_mob.jpg);
+        @include desktop {
+            display: none;
+            }
+        @include tablet{
+            background-image: url(/src/images/header/Frame.jpg);
+            top: 135;
+        }
+            position: fixed;
+            top: 100;
+            background-image: url(/src/images/header/Frame_mob.jpg);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
     }
-    .menu_btn{
-        color: #86E543;
-        width: 36px;
-        height: 36px;
+    .menu_navigation{
+        margin-top: 64px;
     }
+    .menu_item{
+        list-style: none;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .menu_items_link{
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+}
+.header_buttom_link{
+    text-decoration: none;
+    color: black;
 }
