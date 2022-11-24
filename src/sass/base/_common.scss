@@ -9,4 +9,12 @@ html {
 
 body {
     font-family: "Roboto", sans-serif; 
+
+@media screen and (max-width: 767px) {
+    padding-top: 104px;
+}
+
+@media screen and (min-width: 768px) {
+    padding-top: 136px;
+}
 }
