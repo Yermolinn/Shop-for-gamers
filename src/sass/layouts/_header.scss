@@ -4,8 +4,6 @@ button {
   font: inherit;
   color: inherit;
   background-color: transparent;
-  /* отображаем курсор в виде руки при наведении; некоторые
-    считают, что необходимо оставлять стрелочный вид для кнопок */
   cursor: pointer;
 }
 
@@ -26,7 +24,7 @@ button {
     display: inline-block;
     width: 116px;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -48,7 +46,7 @@ button {
     height: 36px;
     &::before,
     &::after {
-      content: '';
+      content: "";
       background-color: var(--sec-text-color);
       position: absolute;
       width: 100%;
@@ -105,9 +103,7 @@ button {
   @include mobile {
     background-image: url(/src/images/header/menu_mob-bg-1x.jpg);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/src/images/header/menu_mob-bg-2x.jpg);
     }
   }
@@ -115,9 +111,7 @@ button {
   @include tablet {
     background-image: url(/src/images/header/menu_tab-bg-1x.jpg);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/src/images/header/menu_tab-bg-2x.jpg);
     }
   }
@@ -190,7 +184,7 @@ button {
   padding-bottom: 8px;
   text-decoration: none;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -211,7 +205,7 @@ button {
     border-radius: 16px;
     left: 633px;
     top: 56px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
