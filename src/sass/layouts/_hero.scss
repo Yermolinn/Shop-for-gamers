@@ -70,6 +70,8 @@
   line-height: 1.18;
   color: var(--prim-text-color);
   @include tablet {
+    text-align: left;
+    margin-bottom: 94px;
     padding-left: 0;
     padding-right: 310px;
     text-align: left;
@@ -77,6 +79,7 @@
     line-height: 1.18;
   }
   @include desktop {
+    margin-bottom: 40px;
     padding-left: 0;
     padding-right: 623px;
     font-size: 64px;
@@ -95,9 +98,14 @@
   line-height: 1.18;
   color: #01383a;
   text-transform: uppercase;
+  @include animation-shadow;
   @include tablet {
     margin: 0;
     font-size: 32px;
     line-height: 1.18;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: var(--hover-prim-btn);
   }
 }
