@@ -1,7 +1,10 @@
 .gallery {
-  padding-bottom: 48px;
   background: var(--text-btn-color);
+  z-index: 5;
 
+  @media screen and (max-width: 767px) {
+    padding-bottom: 48px;
+  }
   @include tablet {
     height: 786px;
     padding-top: 120px;
