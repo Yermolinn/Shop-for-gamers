@@ -12,19 +12,24 @@
         padding-top: 112px;
         padding-bottom: 120px;
     }
-
 }
 
 .blog-article__main-title {
     color: var(--prim-text-color);
-    @include font (500, 24, 1.17, 0.03);
+    @include font(500, 24, 1.17, null);
 
     @include tablet {
-        @include font (500, 56, 1, 0.03);
+        @include font(500, 56, 1, null);
+
+                // margin-top: 48px;
+                // margin-left: 49px;
+                // margin-bottom: 48px;
+                margin: 48px 0 48px 0;
+
     }
 
     @include desktop {
-        @include font (500, 56, 1, 0.03);
+        @include font(500, 56, 1, null);
     }
 }
 
@@ -32,13 +37,15 @@
     margin-top: 20px;
     display: block;
     max-width: 320px;
+    transform: scale(1.1);
     margin-left: auto;
     margin-right: auto;
 
     @include tablet {
         float: left;
-        margin-left: 40px;
         margin-right: 40px;
+        transform: scale(1);
+        max-width: 387px;
     }
 }
 
@@ -48,18 +55,19 @@
 
 .blog-article__title {
     color: var(--prim-text-color);
-    @include font (500, 16, 1, 0.03);
+    @include font(500, 16, 1, null);
     padding-bottom: 8px;
 
     @include tablet {
         white-space: pre-line;
         padding-bottom: 32px;
         color: var(--sec-text-color);
-        @include font (500, 24, 1, 0.03);
+        @include font(500, 24, 1, null);
     }
 
     @include desktop {
-        @include font (500, 24, 1, 0.03);
+        white-space: nowrap;
+        @include font(500, 24, 1, null);
         color: var(--sec-text-color);
     }
 }
@@ -67,23 +75,22 @@
 .blog-article__headline {
     padding-bottom: 8px;
     color: var(--contact-color);
-    @include font (500, 16, 1, 0.03);
+    @include font(500, 16, 1, null);
 
     @include tablet {
-        @include font (500, 24, 1, 0.03);
+        @include font(500, 24, 1, null);
         white-space: pre-line;
     }
 
     @include desktop {
         padding-bottom: 0px;
-        @include font (500, 24, 1, 0.03);
+        @include font(500, 24, 1, null);
     }
-
 }
 
 .blog-article__title-desktop {
     @include tablet {
-        margin-top: 75px;
+        margin-top: 102px;
         padding-bottom: 16px;
         display: flex;
         flex-direction: column;
@@ -91,16 +98,18 @@
 
     @include desktop {
         padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 .blog-article__text {
     padding-bottom: 12px;
     color: var(--prim-text-color);
-    @include font (400, 16, 1.17, 0.03);
+    @include font(400, 16, 1.17, null);
 
     @include tablet {
-        @include font(400, 24, 1.17, 0.03)
+        @include font(400, 24, 1.17, null);
     }
 
     padding-bottom: 20px;
@@ -111,7 +120,6 @@
 }
 
 .blog-article__text--accent {
-
     @include tablet {
         color: var(--sec-text-color);
     }
@@ -120,16 +128,15 @@
 .blog-article__text-list {
     color: var(--prim-text-color);
 
-    @include font (400, 16, 1.17, 0.03);
+    @include font(400, 16, 1.17, null);
 
     @include tablet {
         color: var(--sec-text-color);
-        @include font(400, 24, 1.17, 0.03)
+        @include font(400, 24, 1.17, null);
     }
 }
 
 .blog-article__text-container {
-
     @include tablet {
         gap: 20px;
     }
