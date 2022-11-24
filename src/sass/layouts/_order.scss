@@ -21,6 +21,124 @@ button {
   transition: var(--transition-main);
 }
 
+// ------Contact us-------
+.order__input-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  color: var(--sec-text-color);
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 32px;
+  }
+
+  @include tablet {
+    // margin-top: 48px;
+    // margin-left: 49px;
+    // margin-bottom: 48px;
+    margin: 48px 0 48px 50px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-left: 0px;
+  }
+}
+
+.order__form {
+  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include tablet {
+    padding: 0 50px;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 120px;
+    padding: 0px;
+  }
+}
+
+.order__input-list {
+  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.order__input {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  width: 100%;
+  border: transparent;
+  background: var(--section-bgc-color);
+  color: var(--prim-text-color);
+  border-bottom: 1px solid var(--prim-btn-color);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--prim-text-color);
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  @include mobile {
+    width: 100%;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+}
+
+.order__comments-container {
+  width: 100%;
+}
+
+.order__comments {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 4px;
+  color: #cdcdcd;
+
+  @include tablet {
+    font-size: 18px;
+  }
+}
+
+.order__comments-text {
+  font-size: 16px;
+  line-height: 1.25;
+  width: 100%;
+  height: 256px;
+  border: 1px solid var(--prim-btn-color);
+  color: var(--prim-text-color);
+  background: var(--section-bgc-color);
+  resize: none;
+
+
+  @include tablet {
+    font-size: 18px;
+    height: 256px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+// Готова нижня секція
 .wrapper-btn {
   display: flex;
   flex-direction: column;
@@ -28,17 +146,25 @@ button {
   margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
-
   max-width: 173px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 48px;
+  }
 
   @include mobile {
     max-width: 306px;
+  }
+
+  @include tablet {
+    margin-bottom: 120px;
   }
 
   @include desktop {
     flex-direction: row;
     gap: 20px;
     max-width: 100%;
+    margin-top: 0;
   }
 }
 
