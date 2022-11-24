@@ -1,102 +1,106 @@
-<h4 class="order__input-title">CONTACT US</h4>
-<form class="order__form">
-  <div class="order__input-list">
-    <input
-      type="text"
-      class="order__input"
-      name="user-name"
-      placeholder="Name"
-      required
-    />
-    <input
-      type="email"
-      class="order__input"
-      name="user-email"
-      placeholder="Email"
-      required
-    />
-    <input
-      list="color-range"
-      name="color-list"
-      id="color-list"
-      class="order__input"
-      placeholder="Color Option"
-    />
-    <datalist id="color-range">
-      <option>K9D Black Orange</option>
-      <option>K9D Silver Gray</option>
-      <option>K9U White Blue</option>
-    </datalist>
-    <input
-      list="pieces"
-      name="pieces-list"
-      id="pieces-list"
-      class="order__input"
-      placeholder="Quantity"
-    />
-    <datalist id="pieces">
-      <option>One</option>
-      <option>Two</option>
-      <option>Three</option>
-    </datalist>
-    <input
-      list="payment"
-      name="payment-list"
-      id="payment-list"
-      class="order__input"
-      placeholder="Payment"
-    />
-    <datalist id="payment">
-      <option>Transfer to card</option>
-      <option>Cash payment upon receipt</option>
-    </datalist>
-  </div>
-  <div class="order__comments-container">
-    <label class="order__comments">Leave your message</label>
-    <textarea
-      id="user-comments"
-      class="order__comments-text"
-      name="user-comments"
-    ></textarea>
-  </div>
-</form>
+<div class="container">
+  <h4 class="order__input-title">CONTACT US</h4>
+  <form class="order__form">
+    <div class="order__input-list">
+      <input
+        type="text"
+        class="order__input"
+        name="user-name"
+        placeholder="Name"
+        required
+      />
+      <input
+        type="email"
+        class="order__input"
+        name="user-email"
+        placeholder="Email"
+        required
+      />
+      <input
+        list="color-range"
+        name="color-list"
+        id="color-list"
+        class="order__input"
+        placeholder="Color Option"
+      />
+      <datalist id="color-range">
+        <option>K9D Black Orange</option>
+        <option>K9D Silver Gray</option>
+        <option>K9U White Blue</option>
+      </datalist>
+      <input
+        list="pieces"
+        name="pieces-list"
+        id="pieces-list"
+        class="order__input"
+        placeholder="Quantity"
+      />
+      <datalist id="pieces">
+        <option>One</option>
+        <option>Two</option>
+        <option>Three</option>
+      </datalist>
+      <input
+        list="payment"
+        name="payment-list"
+        id="payment-list"
+        class="order__input"
+        placeholder="Payment"
+      />
+      <datalist id="payment">
+        <option>Transfer to card</option>
+        <option>Cash payment upon receipt</option>
+      </datalist>
+      <label class="order__comments"
+        >Leave your message
+        <textarea
+          id="user-comments"
+          class="order__comments-text"
+          name="user-comments"
+        ></textarea>
+      </label>
+    </div>
+  </form>
 
-<div class="wrapper-btn">
-  <button class="main-btn" type="button" data-modal-buy-open>Buy it now</button>
-  <button class="secondary-btn" type="button" data-modal-add-open>
-    Add to card
-  </button>
-</div>
-
-<div class="backdrop" data-modal>
-  <div class="modal">
-    <button type="button" class="cross" data-modal-close>
-      <svg class="cross__icon" width="31.25" height="31.25">
-        <use href="./images/sprite.svg#icon-modal-close"></use>
-      </svg>
+  <div class="wrapper-btn">
+    <button class="main-btn" type="button" data-modal-buy-open>
+      Buy it now
     </button>
-    <div class="modal__content">
-      <div class="modal-for-buy content--is-hidden" data-content-buy>
-        <p class="modal__text">
-          Thank you <br />
-          for your order!<br />
-          We will contact you soon!
-        </p>
-        <a href="./accessories.html" class="main-btn modal__main-btn"
-          >KEEP SHOPPING</a
-        >
-      </div>
+    <button class="secondary-btn" type="button" data-modal-add-open>
+      Add to card
+    </button>
+  </div>
 
-      <div class="modal-for-add content--is-hidden" data-content-add>
-        <p class="modal__text">
-          Excellent choice! <br />Let's move on to the checkout!
-        </p>
-        <a
-          href="./index.html"
-          class="main-btn modal__main-btn modal__main-btn--add"
-        >
-          Let's go!
-        </a>
+  <div class="backdrop" data-modal-order>
+    <div class="modal">
+      <button type="button" class="cross" data-modal-close>
+        <svg class="cross__icon" width="31.25" height="31.25">
+          <use href="./images/sprite.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <div class="modal__content">
+        <div class="modal-for-buy content--is-hidden" data-content-buy>
+          <p class="modal__text">
+            Thank you <br />
+            for your order!<br />
+            We will contact you soon!
+          </p>
+          <a href="./accessories.html" class="main-btn modal__main-btn"
+            >KEEP SHOPPING</a
+          >
+        </div>
+
+        <div class="modal-for-add content--is-hidden" data-content-add>
+          <p class="modal__text">
+            Excellent choice! <br />Let's move on to the checkout!
+          </p>
+          <a
+            href="./index.html"
+            class="main-btn modal__main-btn modal__main-btn--add"
+          >
+            Let's go!
+          </a>
+        </div>
       </div>
     </div>
   </div>

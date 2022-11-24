@@ -22,15 +22,16 @@ button {
 }
 
 // ------Contact us-------
+
 .order__input-title {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   color: var(--sec-text-color);
+  margin-top: 32px;
   margin-bottom: 16px;
 
   @include tablet {
-    margin-left: 49px;
     margin-bottom: 48px;
   }
 
@@ -46,15 +47,16 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
 
   @include tablet {
-    padding-left: 49px;
-    padding-right: 49px;
   }
 
   @include desktop {
     flex-wrap: nowrap;
-    margin-bottom: 120px;
+    margin-bottom: 48px;
   }
 }
 
@@ -69,7 +71,8 @@ button {
   display: block;
   font-size: 16px;
   line-height: 1.25;
-  width: 288px;
+  width: 100%;
+
   border: transparent;
   background: var(--section-bgc-color);
   color: var(--prim-text-color);
@@ -92,16 +95,12 @@ button {
   }
 }
 
-.order__comments-container {
-  width: 100%;
-  height: 280px;
-}
-
 .order__comments {
   display: block;
+  width: 100%;
+
   font-size: 16px;
   line-height: 1.25;
-  margin-bottom: 4px;
   color: #cdcdcd;
 
   @include tablet {
@@ -110,15 +109,16 @@ button {
 }
 
 .order__comments-text {
+  margin-top: 4px;
+  width: 100%;
+
   font-size: 16px;
   line-height: 1.25;
-  width: 100%;
   height: 95px;
   border: 1px solid var(--prim-btn-color);
   color: var(--prim-text-color);
   background: var(--section-bgc-color);
   resize: none;
-  margin-bottom: 24px;
 
   @include tablet {
     font-size: 18px;
@@ -126,7 +126,6 @@ button {
   }
 
   @include desktop {
-    margin-bottom: 0;
   }
 }
 // Готова нижня секція
@@ -134,14 +133,18 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 48px;
 
   max-width: 173px;
 
   @include mobile {
     max-width: 306px;
+  }
+
+  @include tablet {
+    margin-bottom: 120px;
   }
 
   @include desktop {
@@ -158,6 +161,9 @@ button {
 
   border-radius: 16px;
 
+  @include tablet {
+    font-size: 32px;
+  }
   @include desktop {
     font-size: 32px;
   }
@@ -208,7 +214,7 @@ button {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 15;
 
   opacity: 0;
   pointer-events: none;
