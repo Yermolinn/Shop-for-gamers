@@ -1,7 +1,4 @@
-:root {
-  // TRANSITION
-  --transition-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -30,9 +27,11 @@ button {
   color: var(--sec-text-color);
   margin-top: 32px;
   margin-bottom: 16px;
+
   @media screen and (max-width: 767px) {
     margin-top: 32px;
   }
+
   @include tablet {
     margin-bottom: 48px;
   }
@@ -54,6 +53,7 @@ button {
   margin-bottom: 24px;
 
   @include tablet {
+    padding: 0 50px;
   }
 
   @include desktop {
@@ -90,12 +90,14 @@ button {
     line-height: 1.25;
     color: var(--prim-text-color);
   }
+
   &:focus-visible {
     outline: none;
   }
 
   @include mobile {
     width: 100%;
+
     &::placeholder {
       font-size: 18px;
     }
@@ -143,6 +145,7 @@ button {
   @include desktop {
   }
 }
+
 // Готова нижня секція
 .wrapper-btn {
   display: flex;
@@ -313,6 +316,7 @@ button {
     padding-top: 88px;
     padding-bottom: 88px;
   }
+
   @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -404,6 +408,8 @@ button {
     padding-right: 82.5px;
   }
 }
+
+
 
 // ---Upper-content---
 
@@ -528,3 +534,4 @@ button {
     display: none;
   }
 }
+

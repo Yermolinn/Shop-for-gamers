@@ -1,8 +1,11 @@
-<main>
-    <section class="section contacts">
+<section class="section contacts">
         <div class="container">
             <h2 class="contacts__title">Contacts</h2>
         </div>
+        <!-- Title under line-->
+        <div class="line-top"></div>
+        <div class="line-bottom"></div>
+    
         <picture class="contacts__main-picture">
             <source srcset="./images/contacts/contacts-main-1200.jpg 1x,
                                                                  ./images/contacts/contacts-main-1200@2x.jpg 2x"
@@ -47,15 +50,15 @@
                         <span class="contacts__form__name">Leave your message</span>
                         <textarea class="contacts__form__text-area" rows="5" placeholder=" "></textarea>
                     </label>
-                    <button class="contacts__form__btn" type="submit" data-modal-open>
+                    <button class="contacts__form__btn" type="submit" contact-modal-open>
                         SEND
                     </button>
                 </form>
             </div>
         </div>
-        <div class="contacts__backdrop is-hidden" data-modal>
+        <div class="contacts__backdrop is-hidden" contact-modal>
             <div class="contacts__modal">
-                <button type="button" data-modal-close class="contacts__modal__close-btn">
+                <button type="button" contact-modal-close class="contacts__modal__close-btn">
                     <svg width="31.25" height="31.25">
                         <use href="./images/sprite.svg#icon-charm_circle-cross"></use>
                     </svg>
@@ -70,4 +73,3 @@
     </section>
 
     <script src="./js/contacts-modal.js"></script>
-</main>
