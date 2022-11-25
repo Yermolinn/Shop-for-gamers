@@ -404,3 +404,120 @@ button {
     padding-right: 82.5px;
   }
 }
+
+// ---Upper-content---
+
+.title {
+  font-weight: 500;
+}
+.order__name {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.18;
+  color: #ffffff;
+  margin-bottom: 16px;
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.17;
+    width: 710px;
+    margin-bottom: 24px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.price {
+  align-items: flex-start;
+  margin-top: 16px;
+  @include tablet {
+    padding: 0 24px;
+    flex-direction: column;
+    gap: 56px;
+    justify-content: center;
+  }
+  @include desktop {
+    padding: 0;
+    flex-direction: row;
+    gap: 65px;
+    justify-content: start;
+    align-items: baseline;
+    margin-bottom: 40px;
+  }
+}
+.old-price {
+  font-weight: 500;
+  font-size: 16px;
+  @include tablet {
+    font-size: 24px;
+  }
+}
+.new-price {
+  font-weight: 500;
+  font-size: 32px;
+  @include tablet {
+    font-size: 48px;
+  }
+}
+.slider {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+    margin-top: 24px;
+    gap: 24px;
+  }
+}
+.slider__item {
+  width: calc(100% - 48px) / 4;
+  @include tablet {
+    width: calc(100% - 72px) / 4;
+  }
+}
+.main__picture {
+  width: 100%;
+  @include tablet {
+    max-width: 387px;
+  }
+}
+.order__card {
+  @include tablet {
+    display: flex;
+  }
+}
+.desktop__order {
+  @include desktop {
+    display: flex;
+  }
+}
+.order__info {
+  @include desktop {
+    padding: 0 40px;
+  }
+}
+.order__name-desktop {
+  display: none;
+  @include desktop {
+    display: flex;
+    font-size: 56px;
+    line-height: 1.17;
+    width: 710px;
+    margin-bottom: 32px;
+    color: #ffffff;
+  }
+}
+.slider-tablet {
+  display: none;
+  @include tablet {
+    display: flex;
+    margin-top: 24px;
+    gap: 24px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
