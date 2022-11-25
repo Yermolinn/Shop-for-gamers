@@ -425,9 +425,12 @@ button {
     display: none;
   }
 }
-.price {
+.order__price {
+  display: flex;
   align-items: flex-start;
   margin-top: 16px;
+  justify-content: space-between;
+
   @include tablet {
     padding: 0 24px;
     flex-direction: column;
@@ -443,16 +446,20 @@ button {
     margin-bottom: 40px;
   }
 }
-.old-price {
+.past-price {
   font-weight: 500;
   font-size: 16px;
+  text-decoration-line: line-through;
+
+  color: #8d9289;
   @include tablet {
     font-size: 24px;
   }
 }
-.new-price {
+.fixed-price {
   font-weight: 500;
   font-size: 32px;
+  color: #86e543;
   @include tablet {
     font-size: 48px;
   }
