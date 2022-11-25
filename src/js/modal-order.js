@@ -3,7 +3,7 @@
     openModalBuyBtn: document.querySelector('[data-modal-buy-open]'),
     openModalAddBtn: document.querySelector('[data-modal-add-open]'),
 
-    modalOrder: document.querySelector('[data-modal-order]'),
+    modal: document.querySelector('[data-modal]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
 
     modalBuy: document.querySelector('[data-content-buy]'),
@@ -12,7 +12,7 @@
 
   function closeModal() {
     document.body.classList.toggle('modal-open');
-    refs.modalOrder.classList.remove('backdrop--is-showen');
+    refs.modal.classList.remove('backdrop--is-showen');
 
     refs.modalBuy.classList.add('content--is-hidden');
     refs.modalAdd.classList.add('content--is-hidden');
@@ -20,19 +20,19 @@
 
   function toggleModalBuy() {
     document.body.classList.toggle('modal-open');
-    refs.modalOrder.classList.toggle('backdrop--is-showen');
+    refs.modal.classList.toggle('backdrop--is-showen');
 
     refs.modalBuy.classList.toggle('content--is-hidden');
   }
 
   function toggleModalAdd() {
     document.body.classList.toggle('modal-open');
-    refs.modalOrder.classList.toggle('backdrop--is-showen');
+    refs.modal.classList.toggle('backdrop--is-showen');
 
     refs.modalAdd.classList.toggle('content--is-hidden');
   }
 
-  if (refs.modalOrder != null) {
+  if (refs.modal != null) {
     refs.openModalBuyBtn.addEventListener('click', toggleModalBuy);
 
     refs.openModalAddBtn.addEventListener('click', toggleModalAdd);
