@@ -21,10 +21,10 @@
     @include tablet {
         @include font(500, 56, 1, null);
 
-                // margin-top: 48px;
-                // margin-left: 49px;
-                // margin-bottom: 48px;
-                margin: 48px 0 48px 0;
+        // margin-top: 48px;
+        // margin-left: 49px;
+        // margin-bottom: 48px;
+        margin: 48px 0 48px 0;
 
     }
 
@@ -47,10 +47,27 @@
         transform: scale(1);
         max-width: 387px;
     }
+
+    @include desktop {
+        width: 387px;
+        height: 338px;
+        margin-top: 55;
+        margin-right: 0;
+    }
+}
+
+.blog-article__text--desktop {
+    @include desktop {
+        margin-left: 545px;
+    }
 }
 
 .blog-article__article {
     padding-top: 20px;
+
+    @include desktop {
+        padding-top: 0;
+    }
 }
 
 .blog-article__title {
@@ -69,6 +86,7 @@
         white-space: nowrap;
         @include font(500, 24, 1, null);
         color: var(--sec-text-color);
+        padding-bottom: 0;
     }
 }
 
@@ -79,7 +97,7 @@
 
     @include tablet {
         @include font(500, 24, 1, null);
-        white-space: pre-line;
+
     }
 
     @include desktop {
@@ -97,8 +115,11 @@
     }
 
     @include desktop {
-        padding-bottom: 24px;
+        margin-left: 545px;
+        margin-top: 0;
+        padding-bottom: 28px;
         display: flex;
+        flex-direction: inherit;
         justify-content: space-between;
     }
 }
@@ -112,7 +133,10 @@
         @include font(400, 24, 1.17, null);
     }
 
-    padding-bottom: 20px;
+    @include desktop {
+        padding-bottom: 18px;
+    }
+
 }
 
 .blog-article__text:last-child {
@@ -122,6 +146,11 @@
 .blog-article__text--accent {
     @include tablet {
         color: var(--sec-text-color);
+    }
+
+    @include desktop {
+        margin-top: 40px;
+        padding-bottom: 0px;
     }
 }
 
@@ -134,10 +163,22 @@
         color: var(--sec-text-color);
         @include font(400, 24, 1.17, null);
     }
+
+    @include desktop {
+        margin-top: 0;
+    }
 }
 
 .blog-article__text-container {
     @include tablet {
         gap: 20px;
+    }
+}
+
+.blog-article__br {
+    display: none;
+
+    @include desktop {
+        display: inline-block;
     }
 }
