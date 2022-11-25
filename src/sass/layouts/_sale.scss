@@ -141,6 +141,9 @@ picture img {
 .sale__button {
   width: 153px;
   height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--wht-btn-color);
   border-radius: 16px;
@@ -167,4 +170,3 @@ picture img {
     height: 65px;
   }
 }
-
