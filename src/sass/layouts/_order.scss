@@ -19,13 +19,11 @@ button {
 }
 
 // ------Contact us-------
-
 .order__input-title {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   color: var(--sec-text-color);
-  margin-top: 32px;
   margin-bottom: 16px;
 
   @media screen and (max-width: 767px) {
@@ -33,7 +31,10 @@ button {
   }
 
   @include tablet {
-    margin-bottom: 48px;
+    // margin-top: 48px;
+    // margin-left: 49px;
+    // margin-bottom: 48px;
+    margin: 48px 0 48px 50px;
   }
 
   @include desktop {
@@ -48,9 +49,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 24px;
 
   @include tablet {
     padding: 0 50px;
@@ -58,8 +56,9 @@ button {
 
   @include desktop {
     flex-wrap: nowrap;
-    margin-bottom: 48px;
-    gap: 20px;
+    align-items: center;
+    margin-bottom: 120px;
+    padding: 0px;
   }
 }
 
@@ -68,10 +67,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  @include tablet {
-    width: 50%;
-  }
 }
 
 .order__input {
@@ -79,7 +74,6 @@ button {
   font-size: 16px;
   line-height: 1.25;
   width: 100%;
-
   border: transparent;
   background: var(--section-bgc-color);
   color: var(--prim-text-color);
@@ -105,37 +99,31 @@ button {
 }
 
 .order__comments-container {
-  @include tablet {
-    width: 50%;
-  }
+  width: 100%;
 }
 
 .order__comments {
   display: block;
-  width: 100%;
-
   font-size: 16px;
   line-height: 1.25;
+  margin-bottom: 4px;
   color: #cdcdcd;
 
   @include tablet {
     font-size: 18px;
-    max-height: 280px;
   }
 }
 
 .order__comments-text {
-  margin-top: 4px;
-  width: 100%;
-
   font-size: 16px;
   line-height: 1.25;
-  height: 95px;
-
+  width: 100%;
+  height: 256px;
   border: 1px solid var(--prim-btn-color);
   color: var(--prim-text-color);
   background: var(--section-bgc-color);
   resize: none;
+
 
   @include tablet {
     font-size: 18px;
@@ -143,6 +131,7 @@ button {
   }
 
   @include desktop {
+    margin-bottom: 0;
   }
 }
 
@@ -151,10 +140,9 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
-
   max-width: 173px;
 
   @media screen and (max-width: 767px) {
@@ -184,9 +172,6 @@ button {
 
   border-radius: 16px;
 
-  @include tablet {
-    font-size: 32px;
-  }
   @include desktop {
     font-size: 32px;
   }
@@ -237,7 +222,7 @@ button {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 15;
+  z-index: 5;
 
   opacity: 0;
   pointer-events: none;
@@ -408,130 +393,3 @@ button {
     padding-right: 82.5px;
   }
 }
-
-
-
-// ---Upper-content---
-
-.title {
-  font-weight: 500;
-}
-.order__name {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.18;
-  color: #ffffff;
-  margin-bottom: 16px;
-  @include tablet {
-    font-size: 56px;
-    line-height: 1.17;
-    width: 710px;
-    margin-bottom: 24px;
-  }
-  @include desktop {
-    display: none;
-  }
-}
-.order__price {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 16px;
-  justify-content: space-between;
-
-  @include tablet {
-    padding: 0 24px;
-    flex-direction: column;
-    gap: 56px;
-    justify-content: center;
-  }
-  @include desktop {
-    padding: 0;
-    flex-direction: row;
-    gap: 65px;
-    justify-content: start;
-    align-items: baseline;
-    margin-bottom: 40px;
-  }
-}
-.past-price {
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration-line: line-through;
-
-  color: #8d9289;
-  @include tablet {
-    font-size: 24px;
-  }
-}
-.fixed-price {
-  font-weight: 500;
-  font-size: 32px;
-  color: #86e543;
-  @include tablet {
-    font-size: 48px;
-  }
-}
-.slider {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  margin-top: 16px;
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: flex;
-    margin-top: 24px;
-    gap: 24px;
-  }
-}
-.slider__item {
-  width: calc(100% - 48px) / 4;
-  @include tablet {
-    width: calc(100% - 72px) / 4;
-  }
-}
-.main__picture {
-  width: 100%;
-  @include tablet {
-    max-width: 387px;
-  }
-}
-.order__card {
-  @include tablet {
-    display: flex;
-  }
-}
-.desktop__order {
-  @include desktop {
-    display: flex;
-  }
-}
-.order__info {
-  @include desktop {
-    padding: 0 40px;
-  }
-}
-.order__name-desktop {
-  display: none;
-  @include desktop {
-    display: flex;
-    font-size: 56px;
-    line-height: 1.17;
-    width: 710px;
-    margin-bottom: 32px;
-    color: #ffffff;
-  }
-}
-.slider-tablet {
-  display: none;
-  @include tablet {
-    display: flex;
-    margin-top: 24px;
-    gap: 24px;
-  }
-  @include desktop {
-    display: none;
-  }
-}
-
