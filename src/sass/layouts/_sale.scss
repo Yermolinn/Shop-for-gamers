@@ -3,12 +3,12 @@
 }
 
 .sale {
-  padding-top: 48px;
+  // padding-top: 48px;
   padding-bottom: 48px;
   background-color: var(--section-bgc-color);
 
   @include tablet {
-    padding-top: 120px;
+    // padding-top: 120px;
     padding-bottom: 120px;
   }
 }
@@ -18,7 +18,7 @@
   font-size: 24px;
   line-height: 1.16;
   margin-left: 80px;
-  margin-bottom: 35px;
+  // margin-bottom: 35px;
 
   color: var(--prim-text-color);
 
@@ -167,3 +167,4 @@ picture img {
     height: 65px;
   }
 }
+
