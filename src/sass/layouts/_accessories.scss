@@ -168,6 +168,10 @@
   gap: 16px;
   justify-content: center;
   margin-top: 24px;
+
+  @include tablet {
+    margin-top: 32px;
+  }
 }
 .point {
   display: block;
