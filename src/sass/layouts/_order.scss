@@ -9,6 +9,18 @@ body {
   }
 }
 
+
+
+.section {
+  background-color: var(--section-bgc-color);
+  padding: 40px 0;
+
+  @include tablet {
+    padding: 120px 0;
+  }
+}
+
+
 button {
   display: block;
   cursor: pointer;
@@ -142,16 +154,8 @@ button {
   margin-right: auto;
   max-width: 173px;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 48px;
-  }
-
   @include mobile {
     max-width: 306px;
-  }
-
-  @include tablet {
-    margin-bottom: 120px;
   }
 
   @include desktop {
@@ -219,7 +223,7 @@ button {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 20;
 
   opacity: 0;
   pointer-events: none;

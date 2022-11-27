@@ -52,6 +52,7 @@ button {
     position: relative;
     width: 56px;
     height: 36px;
+    cursor: pointer;
     &::before,
     &::after {
       content: "";
