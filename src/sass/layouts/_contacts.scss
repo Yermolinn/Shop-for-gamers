@@ -46,12 +46,6 @@ margin:  0 auto;
     @media screen and (min-width:480px) and  (max-width: 767px) {
         display: block;
         max-width: 480px;}
-    @include tablet {
-        margin-right: 32px;
-    }
-    @include desktop {
-        margin-right: 40px;
-    }
 }
 
 .contacts__main-image {
@@ -79,9 +73,17 @@ margin:  0 auto;
 }
 
 .summary-feedback {
+    @media screen and (max-width: 767px) {
+        margin-top: 16px;
+    }
+
+    @include tablet {
+        margin-top: 32px;
+    }
+
     @include desktop {
         display: flex;
-        gap: 122px;
+        // gap: 122px;
     }
 }
 
