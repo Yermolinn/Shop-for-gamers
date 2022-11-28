@@ -3,12 +3,14 @@
   z-index: 5;
 
   @media screen and (max-width: 767px) {
-    padding-bottom: 48px;
+    height: 498px;
+    margin-bottom: 48px;
   }
   @include tablet {
-    height: 786px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+margin: 120px 0;
+  }
+  @include desktop {
+    height: 507px;
   }
 }
 

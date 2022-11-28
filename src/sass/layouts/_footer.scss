@@ -88,6 +88,7 @@
   }
   @include desktop {
     margin-left: 217px;
+    flex-direction: column
   }
 }
 
@@ -104,8 +105,7 @@
 .footer__soc-item {
   margin-bottom: 20px;
   @include desktop {
-    margin-bottom: 16px;
-
+    margin-bottom: 0;
   }
   &:last-child {
     margin-bottom: 0px;
