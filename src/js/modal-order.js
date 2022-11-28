@@ -8,6 +8,8 @@
 
     modalBuy: document.querySelector('[data-content-buy]'),
     modalAdd: document.querySelector('[data-content-add]'),
+    body: document.querySelector("body"),
+
   };
 
   function closeModal() {
@@ -23,6 +25,8 @@
     refs.modal.classList.toggle('backdrop--is-showen');
 
     refs.modalBuy.classList.toggle('content--is-hidden');
+    refs.body.classList.toggle("no-scroll");
+
   }
 
   function toggleModalAdd() {
@@ -30,6 +34,8 @@
     refs.modal.classList.toggle('backdrop--is-showen');
 
     refs.modalAdd.classList.toggle('content--is-hidden');
+    refs.body.classList.toggle("no-scroll");
+
   }
 
   if (refs.modal != null) {

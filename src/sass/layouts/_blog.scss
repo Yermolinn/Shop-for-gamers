@@ -1,21 +1,21 @@
 .blog {
   background: #01383a;
-}
-.container {
+  padding: 40px 0;
+    @include tablet {
+        padding: 120px 0;
+      }
 }
 
 .blog__title {
   @include font(500, 24px, 28px, null);
   color: var(--prim-text-color);
-  padding-top: 40px;
   @include tablet {
     @include font(500, 56px, 66px, null);
     padding-left: 85px;
-    padding-top: 120px;
   }
   @include desktop {
     padding-left: 127px;
-    margin-bottom: 75px;
+    // margin-bottom: 75px;
   }
 }
 
@@ -157,13 +157,9 @@
   display: flex;
   gap: 16px;
   justify-content: center;
-  padding: 48px 0;
-  margin: 0;
+  margin-top: 24px;
   @include tablet {
-    padding: 43px 0 120px 0;
-  }
-  @include desktop {
-    padding: 0 0 120px 0;
+    margin-top: 32px;
   }
 }
 .point {

@@ -25,7 +25,7 @@
 
 
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.17;
   text-align: center;
 
@@ -36,7 +36,7 @@
     margin-right: 118px;
   }
   @include desktop {
-    width: 187px;
+    width: 121px;
   }
 
 
@@ -63,7 +63,7 @@
   font-size: 16px;
   line-height: 100%;
   color: var(--prim-text-color);
-  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-bottom 150ms cubic-bezier(0.4, 0, 0.2, 1);
   
   &:hover,
   &:focus {
@@ -88,6 +88,7 @@
   }
   @include desktop {
     margin-left: 217px;
+    flex-direction: column
   }
 }
 
@@ -104,8 +105,7 @@
 .footer__soc-item {
   margin-bottom: 20px;
   @include desktop {
-    margin-bottom: 16px;
-
+    margin-bottom: 0;
   }
   &:last-child {
     margin-bottom: 0px;

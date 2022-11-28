@@ -3,12 +3,12 @@
 }
 
 .sale {
-  padding-top: 48px;
+  // padding-top: 48px;
   padding-bottom: 48px;
   background-color: var(--section-bgc-color);
 
   @include tablet {
-    padding-top: 120px;
+    // padding-top: 120px;
     padding-bottom: 120px;
   }
 }
@@ -18,7 +18,7 @@
   font-size: 24px;
   line-height: 1.16;
   margin-left: 80px;
-  margin-bottom: 35px;
+  // margin-bottom: 35px;
 
   color: var(--prim-text-color);
 
@@ -60,6 +60,30 @@
 .sale__item {
   @include tablet {
     width: calc((100% - 38px) / 2);
+    &:nth-child(1) {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:nth-child(3) {
+      order: 5;
+    }
+    &:nth-child(4) {
+      order: 8;
+    }
+    &:nth-child(5) {
+      order: 3;
+    }
+    &:nth-child(6) {
+      order: 4;
+    }
+    &:nth-child(7) {
+      order: 7;
+    }
+    &:nth-child(8) {
+      order: 6;
+    }
   }
   @include desktop {
     width: calc((100% - 60px) / 4);
@@ -71,22 +95,22 @@
       order: 2;
     }
     &:nth-child(3) {
-      order: 5;
-    }
-    &:nth-child(4) {
-      order: 6;
-    }
-    &:nth-child(5) {
       order: 3;
     }
+    &:nth-child(4) {
+      order: 4;
+    }
+    &:nth-child(5) {
+      order: 5;
+    }
     &:nth-child(6) {
-      order: 8;
+      order: 6;
     }
     &:nth-child(7) {
       order: 7;
     }
     &:nth-child(8) {
-      order: 4;
+      order: 8;
     }
   }
 }
@@ -141,6 +165,9 @@ picture img {
 .sale__button {
   width: 153px;
   height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--wht-btn-color);
   border-radius: 16px;
