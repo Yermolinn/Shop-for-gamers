@@ -1,7 +1,7 @@
 .hero {
-  height: 100%;
+  height: 601px;
   padding-top: 180px;
-  // padding-bottom: 120px;
+  padding-bottom: 120px;
   background-color: rgb(59, 82, 59);
   background-image: url(../images/hero/keyboard.png),
     url(../images/hero/mouse.png), url(../images/hero/headphones.png),
@@ -13,7 +13,6 @@
   
   @include tablet {
     height: 860px;
-
     background-image: url(../images/hero/keyboard-tab.png),
     url(../images/hero/mouse-tab.png), url(../images/hero/headphones-tab.png),
     url(../images/hero/bg-hero1x.jpg);
@@ -23,14 +22,13 @@
   background-size: auto, auto, auto, cover;
   }
   @include desktop {
-    height: 860px;
-
+    height: 865px;
     background-image: url(../images/hero/keyboard-desktop.png),
     url(../images/hero/mouse-desktop.png), url(../images/hero/headphones-desktop.png),
     url(../images/hero/bg-hero1x.jpg);
   background-repeat: no-repeat;
   background-position: right 450px bottom 250px, right 470px top 50px,
-  right 50px top 160px, 0;
+  right 50px top 160px, bottom;
   background-size: auto, auto, auto, cover;
   }
 }
